@@ -1,0 +1,11 @@
+D:\School FIles\visual studio\repos\FInalYearProject\CRMS.Domain\bin\Debug\net8.0\CRMS.Domain.deps.json
+D:\School FIles\visual studio\repos\FInalYearProject\CRMS.Domain\bin\Debug\net8.0\CRMS.Domain.dll
+D:\School FIles\visual studio\repos\FInalYearProject\CRMS.Domain\bin\Debug\net8.0\CRMS.Domain.pdb
+D:\School FIles\visual studio\repos\FInalYearProject\CRMS.Domain\obj\Debug\net8.0\CRMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\School FIles\visual studio\repos\FInalYearProject\CRMS.Domain\obj\Debug\net8.0\CRMS.Domain.AssemblyInfoInputs.cache
+D:\School FIles\visual studio\repos\FInalYearProject\CRMS.Domain\obj\Debug\net8.0\CRMS.Domain.AssemblyInfo.cs
+D:\School FIles\visual studio\repos\FInalYearProject\CRMS.Domain\obj\Debug\net8.0\CRMS.Domain.csproj.CoreCompileInputs.cache
+D:\School FIles\visual studio\repos\FInalYearProject\CRMS.Domain\obj\Debug\net8.0\CRMS.Domain.dll
+D:\School FIles\visual studio\repos\FInalYearProject\CRMS.Domain\obj\Debug\net8.0\refint\CRMS.Domain.dll
+D:\School FIles\visual studio\repos\FInalYearProject\CRMS.Domain\obj\Debug\net8.0\CRMS.Domain.pdb
+D:\School FIles\visual studio\repos\FInalYearProject\CRMS.Domain\obj\Debug\net8.0\ref\CRMS.Domain.dll
