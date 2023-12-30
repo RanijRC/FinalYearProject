@@ -3,7 +3,6 @@
     public class StaffData
     {
         public string Status { get; set; }
-        public string Faculty { get; set; }
-
+        public string FacultyName { get; set; }
     }
 }
