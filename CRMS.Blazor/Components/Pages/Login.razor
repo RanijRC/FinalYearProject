@@ -1,0 +1,56 @@
+﻿@page "/"
+@using CRMS.Application.Common.Interface
+@inject IAuthentication AuthenticationService
+@inject NavigationManager NavManager
+@using CRMS.Application.DTOs
+
+<h3>Login</h3>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Please enter your details</h5>
+        <EditForm Model="loginModel" OnValidSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <InputText Id="username" Class="form-control" @bind-Value="loginModel.Username" />
+                <ValidationMessage For="@(() => loginModel.Username)" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <InputText Id="password" type="password" Class="form-control" @bind-Value="loginModel.Password" />
+                <ValidationMessage For="@(() => loginModel.Password)" />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+    private UserLoginRequestDTO loginModel = new UserLoginRequestDTO();
+
+    private async Task HandleValidSubmit()
+    {
+        ResponseDTO response = await AuthenticationService.Login(loginModel);
+        if (response != null && response.Status == "Success")
+        {
+            // Successful login, redirect to another page
+            NavManager.NavigateTo("/home");
+        }
+        else
+        {
+            if (response != null)
+            {
+                // Example: Show the error message returned from the server
+                string errorMessage = response.Message ?? "Login failed.";
+                // Handle the error message accordingly
+            }
+            else
+            {
+                // Handle other scenarios like null response
+            }
+        }
+    }
+}
