@@ -1,5 +1,16 @@
-﻿<h3>index</h3>
+﻿@page "/"
+@inject NavigationManager NavManager
 
 @code {
-
+    protected override void OnInitialized()
+    {
+        try
+        {
+            NavManager.NavigateTo("/login");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Navigation Exception: {ex.Message}");
+        }
+    }
 }
