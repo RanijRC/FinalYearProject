@@ -1,0 +1,17 @@
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\bin\Debug\net8.0\CRMS.ServerLibrary.deps.json
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\bin\Debug\net8.0\CRMS.ServerLibrary.dll
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\bin\Debug\net8.0\CRMS.ServerLibrary.pdb
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\obj\Debug\net8.0\CRMS.ServerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\obj\Debug\net8.0\CRMS.ServerLibrary.AssemblyInfoInputs.cache
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\obj\Debug\net8.0\CRMS.ServerLibrary.AssemblyInfo.cs
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\obj\Debug\net8.0\CRMS.ServerLibrary.csproj.CoreCompileInputs.cache
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\obj\Debug\net8.0\CRMS.ServerLibrary.dll
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\obj\Debug\net8.0\refint\CRMS.ServerLibrary.dll
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\obj\Debug\net8.0\CRMS.ServerLibrary.pdb
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\obj\Debug\net8.0\ref\CRMS.ServerLibrary.dll
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\obj\Debug\net8.0\CRMS.ServerLibrary.csproj.AssemblyReference.cache
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\bin\Debug\net8.0\CRMS.ServerLibrary.runtimeconfig.json
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\bin\Debug\net8.0\CRMS.BaseLibrary.dll
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\bin\Debug\net8.0\CRMS.BaseLibrary.pdb
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\obj\Debug\net8.0\CRMS.ServerLibrary.csproj.CopyComplete
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ServerLibrary\obj\Debug\net8.0\CRMS.ServerLibrary.genruntimeconfig.cache

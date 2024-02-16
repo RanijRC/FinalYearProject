@@ -1,0 +1,11 @@
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ClientLibrary\bin\Debug\net8.0\CRMS.ClientLibrary.deps.json
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ClientLibrary\bin\Debug\net8.0\CRMS.ClientLibrary.dll
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ClientLibrary\bin\Debug\net8.0\CRMS.ClientLibrary.pdb
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ClientLibrary\obj\Debug\net8.0\CRMS.ClientLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ClientLibrary\obj\Debug\net8.0\CRMS.ClientLibrary.AssemblyInfoInputs.cache
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ClientLibrary\obj\Debug\net8.0\CRMS.ClientLibrary.AssemblyInfo.cs
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ClientLibrary\obj\Debug\net8.0\CRMS.ClientLibrary.csproj.CoreCompileInputs.cache
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ClientLibrary\obj\Debug\net8.0\CRMS.ClientLibrary.dll
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ClientLibrary\obj\Debug\net8.0\refint\CRMS.ClientLibrary.dll
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ClientLibrary\obj\Debug\net8.0\CRMS.ClientLibrary.pdb
+D:\School Files\Repository\Projects\FinalYearProjectCRMS\CRMS.ClientLibrary\obj\Debug\net8.0\ref\CRMS.ClientLibrary.dll

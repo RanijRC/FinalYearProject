@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CRMS.API.props" />
+</Project>

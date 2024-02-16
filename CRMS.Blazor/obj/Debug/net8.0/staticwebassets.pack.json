@@ -1,24 +1,44 @@
 {
   "Files": [
     {
-      "Id": "D:\\School FIles\\visual studio\\repos\\FInalYearProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CRMS.Blazor.bundle.scp.css",
-      "PackagePath": "staticwebassets\\CRMS.Blazor.bundle.scp.css"
+      "Id": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "D:\\School FIles\\visual studio\\repos\\FInalYearProject\\CRMS.Blazor\\wwwroot\\app.css",
-      "PackagePath": "staticwebassets\\app.css"
+      "Id": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\gyieq2xu1l.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "D:\\School FIles\\visual studio\\repos\\FInalYearProject\\CRMS.Blazor\\wwwroot\\bootstrap\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+      "Id": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\obj\\Debug\\net8.0\\scopedcss\\bundle\\CRMS.Blazor.styles.css",
+      "PackagePath": "staticwebassets\\CRMS.Blazor.styles.css"
     },
     {
-      "Id": "D:\\School FIles\\visual studio\\repos\\FInalYearProject\\CRMS.Blazor\\wwwroot\\bootstrap\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+      "Id": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "D:\\School FIles\\visual studio\\repos\\FInalYearProject\\CRMS.Blazor\\wwwroot\\favicon.png",
+      "Id": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CRMS.Blazor.Microsoft.AspNetCore.StaticWebAssets.props",
