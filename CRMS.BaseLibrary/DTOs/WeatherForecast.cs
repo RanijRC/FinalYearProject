@@ -1,5 +1,5 @@
-namespace CRMS.BaseLibrary.DTOs 
-{ 
+namespace CRMS.BaseLibrary.DTOs
+{
     public class WeatherForecast
     {
         public DateOnly Date { get; set; }

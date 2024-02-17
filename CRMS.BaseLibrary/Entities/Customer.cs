@@ -1,4 +1,8 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace CRMS.BaseLibrary.Entities
 {
@@ -16,6 +20,6 @@ namespace CRMS.BaseLibrary.Entities
         public int ComplaintId { get; set; }
 
         public Department? Departments { get; set; }
-        public int DepartmentId { get; set;}
+        public int DepartmentId { get; set; }
     }
 }

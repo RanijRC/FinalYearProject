@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\CRMS.Blazor.csproj": {}
+    "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.Blazor\\CRMS.Blazor.csproj": {}
   },
   "projects": {
-    "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj": {
+    "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj",
+        "projectUniqueName": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj",
         "projectName": "CRMS.BaseLibrary",
-        "projectPath": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj",
+        "projectPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj",
         "packagesPath": "C:\\Users\\raazc\\.nuget\\packages\\",
-        "outputPath": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.BaseLibrary\\obj\\",
+        "outputPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -60,18 +65,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\CRMS.Blazor.csproj": {
+    "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.Blazor\\CRMS.Blazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\CRMS.Blazor.csproj",
+        "projectUniqueName": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.Blazor\\CRMS.Blazor.csproj",
         "projectName": "CRMS.Blazor",
-        "projectPath": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\CRMS.Blazor.csproj",
+        "projectPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.Blazor\\CRMS.Blazor.csproj",
         "packagesPath": "C:\\Users\\raazc\\.nuget\\packages\\",
-        "outputPath": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.Blazor\\obj\\",
+        "outputPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.Blazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,11 +98,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj": {
-                "projectPath": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj"
+              "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj": {
+                "projectPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj"
               },
-              "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj": {
-                "projectPath": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj"
+              "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj": {
+                "projectPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj"
               }
             }
           }
@@ -106,6 +111,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -136,13 +146,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )",
+              "version": "[8.0.2, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )",
+              "version": "[8.0.2, )",
               "autoReferenced": true
             }
           },
@@ -160,7 +170,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.1, 8.0.1]"
+              "version": "[8.0.2, 8.0.2]"
             }
           ],
           "frameworkReferences": {
@@ -168,7 +178,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -177,14 +187,14 @@
         }
       }
     },
-    "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj": {
+    "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj",
+        "projectUniqueName": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj",
         "projectName": "CRMS.ClientLibrary",
-        "projectPath": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj",
+        "projectPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj",
         "packagesPath": "C:\\Users\\raazc\\.nuget\\packages\\",
-        "outputPath": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.ClientLibrary\\obj\\",
+        "outputPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.ClientLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -206,8 +216,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj": {
-                "projectPath": "D:\\School Files\\Repository\\Projects\\FinalYearProjectCRMS\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj"
+              "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj": {
+                "projectPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj"
               }
             }
           }
@@ -216,6 +226,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -225,6 +240,14 @@
             "Blazored.LocalStorage": {
               "target": "Package",
               "version": "[4.5.0, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
@@ -247,7 +270,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

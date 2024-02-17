@@ -1,5 +1,5 @@
 ﻿using CRMS.BaseLibrary.DTOs;
-using CRMS.BaseLibrary.Responses;
+using CRMS.BaseLibrary.Response;
 
 
 namespace CRMS.ClientLibrary.Services.Contracts

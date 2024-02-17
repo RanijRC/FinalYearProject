@@ -1,6 +1,10 @@
-﻿
-
-using CRMS.BaseLibrary.DTOs;
+﻿using CRMS.BaseLibrary.DTOs;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace CRMS.ClientLibrary.Helpers
 {
@@ -13,8 +17,8 @@ namespace CRMS.ClientLibrary.Helpers
             var stringToken = await localStorageService.GetToken();
             if (string.IsNullOrEmpty(stringToken)) return client;
 
-            var deserializeToken = Serializations.DeserializeJsonString<UserSession>(stringToken);
-            if(deserializeToken == null) return client;
+            var deserializeToken = Serialization.DeserializeJsonString<UserSession>(stringToken);
+            if (deserializeToken == null) return client;
 
             client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", deserializeToken.Token);
             return client;
@@ -27,6 +31,4 @@ namespace CRMS.ClientLibrary.Helpers
             return client;
         }
     }
-
-    
 }

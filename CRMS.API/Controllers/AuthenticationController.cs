@@ -1,5 +1,6 @@
 ﻿using CRMS.BaseLibrary.DTOs;
 using CRMS.ServerLibrary.Repositories.Contracts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace CRMS.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AllowAnonymous]
     public class AuthenticationController(IUserAccount accountInterface) : ControllerBase
     {
         [HttpPost("register")]
@@ -32,6 +34,5 @@ namespace CRMS.API.Controllers
             var result = await accountInterface.RefreshTokenAsync(token);
             return Ok(result);
         }
-
     }
 }

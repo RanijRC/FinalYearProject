@@ -1,4 +1,4 @@
-@CRMS.API_HostAddress = http://localhost:5066
+@CRMS.API_HostAddress = http://localhost:5261
 
 GET {{CRMS.API_HostAddress}}/weatherforecast/
 Accept: application/json

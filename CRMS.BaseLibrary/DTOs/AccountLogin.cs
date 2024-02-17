@@ -8,6 +8,5 @@ namespace CRMS.BaseLibrary.DTOs
 {
     public class AccountLogin : AccountBase
     {
-
     }
 }
