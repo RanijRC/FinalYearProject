@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CRMS.Blazor",
   "resources": {
-    "hash": "sha256-em9mnUmVvCXoOizhNW+yACXWfefK5azJ+DxaVRCM3X0=",
+    "hash": "sha256-cJJw/OCLEmA0dp/4BdX8zDM9uhHaj86V6ATPG6h+bfk=",
     "jsModuleNative": {
       "dotnet.native.8.0.2.d4969zb61x.js": "sha256-gPMK16QWoJSTxorlZJqcVtbBRTniIQWlLsJN2O4cJHg="
     },
@@ -49,6 +49,11 @@
       "Microsoft.IdentityModel.Tokens.wasm": "sha256-zeT3cX6Y16zZxEmgSukPOnPBPoQNq6jLsO0MOwYXg14=",
       "Microsoft.JSInterop.wasm": "sha256-3+2CckqqzD3oydUz+FqoTRaWiErECN18p84wvxgAVRM=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-OU61RdB3MGGK/px7V+70S2lQ+RUl6pqHspk5yX0tGtc=",
+      "Syncfusion.Blazor.Buttons.wasm": "sha256-yCOFEs6vHwWIDUefxLWXEE21CeZ6dYB3wwlji2uvK9I=",
+      "Syncfusion.Blazor.Core.wasm": "sha256-7EvuVHJlQpXR5FL9w0Vx9Zlkp5oXzySEiGDzxJUiawY=",
+      "Syncfusion.Blazor.Popups.wasm": "sha256-QKUrC+5UxrTHKBSt6GK8FSF87FiamWIFKoAErjhHcxk=",
+      "Syncfusion.Blazor.Themes.wasm": "sha256-idiWwZY/Q6/VCqXKGATRIhmMO1t2hylanrEHF8lvjAk=",
+      "Syncfusion.Licensing.wasm": "sha256-dloe5B3y7LTiCGm4V4Hh5M4W/NIPTm0raHeA0PNXs4I=",
       "System.IdentityModel.Tokens.Jwt.wasm": "sha256-urIh4wWUqEjAyP6bV0ueJAAgyvrVU7TghFPBmbI3G6Y=",
       "System.IO.Pipelines.wasm": "sha256-JqVBy6SV+3qk+IK3VJiyIDt9CsVk6b1/ytTXmrI4mTM=",
       "Microsoft.CSharp.wasm": "sha256-8nyldHzkTaUeTZ63Zp+JhpeQn6oscutjZPTmWsJeJN4=",
@@ -221,12 +226,12 @@
       "System.Private.CoreLib.wasm": "sha256-I2w0iHf5nvSQyF1YE1VbgdTzmmz6a4OE6J7vo5wFa/4=",
       "CRMS.BaseLibrary.wasm": "sha256-NALdVs1MwC9KUXcI2WB7+jZJtXtI1EP40Vyox1afCMU=",
       "CRMS.ClientLibrary.wasm": "sha256-YlOekLLDFMAzYGbbUYWNmHauVnbCxRqYOTspeT2+GXE=",
-      "CRMS.Blazor.wasm": "sha256-4teShDujRS4ueqq5Id7afZ2mr/m2HyBrpFRFgCRNneo="
+      "CRMS.Blazor.wasm": "sha256-cxoUBSgRJoxAtfA2E4ci1hQxW6I/eTzc0Ox4VluumzQ="
     },
     "pdb": {
       "CRMS.BaseLibrary.pdb": "sha256-rt5DYgATHmlfyKeJXR7zBsDSD8PUwJnLzU8StmOnYMA=",
       "CRMS.ClientLibrary.pdb": "sha256-yWM4RpKPvzpM9/hZDP5+akhIE5PWgrhQe3R+BCodFUY=",
-      "CRMS.Blazor.pdb": "sha256-Nal3GBYvvRcMVjKtFuwYXtjhPGZKZ1n6UgTHn/6VxR8="
+      "CRMS.Blazor.pdb": "sha256-K7YDNHcJQ+NhuqOlAq+6NhcXaRjqsy0lX6d8quBC4Zc="
     }
   },
   "cacheBootResources": true,

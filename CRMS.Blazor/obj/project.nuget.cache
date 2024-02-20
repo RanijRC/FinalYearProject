@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AtSRm4VRCD8Hn2n0QxfPQsc/Ru/CcBorLuPCNv8ylSKekSo8NvlumJoemDHyC3N+dZ27cZqS3HrpIHper7R4eg==",
+  "dgSpecHash": "Zb5sd7jT/MAw3lOTH4UZHW+WEEaCRKLyrLif+bKQJF5lCQGnGQipYmoLY5GEPdnhyPo/RcjGrkEqnDAOm2KHjQ==",
   "success": true,
   "projectFilePath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.Blazor\\CRMS.Blazor.csproj",
   "expectedPackageFiles": [
@@ -40,6 +40,11 @@
     "C:\\Users\\raazc\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.2\\microsoft.jsinterop.webassembly.8.0.2.nupkg.sha512",
     "C:\\Users\\raazc\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.2\\microsoft.net.illink.tasks.8.0.2.nupkg.sha512",
     "C:\\Users\\raazc\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.2\\microsoft.net.sdk.webassembly.pack.8.0.2.nupkg.sha512",
+    "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\23.1.36\\syncfusion.blazor.buttons.23.1.36.nupkg.sha512",
+    "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\23.1.36\\syncfusion.blazor.core.23.1.36.nupkg.sha512",
+    "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\23.1.36\\syncfusion.blazor.popups.23.1.36.nupkg.sha512",
+    "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\23.1.36\\syncfusion.blazor.themes.23.1.36.nupkg.sha512",
+    "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.licensing\\23.1.36\\syncfusion.licensing.23.1.36.nupkg.sha512",
     "C:\\Users\\raazc\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
     "C:\\Users\\raazc\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.3.1\\system.identitymodel.tokens.jwt.7.3.1.nupkg.sha512",
     "C:\\Users\\raazc\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
