@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.Blazor\\CRMS.Blazor.csproj": {}
+    "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\CRMS.Blazor.csproj": {}
   },
   "projects": {
-    "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj": {
+    "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Application\\CRMS.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj",
-        "projectName": "CRMS.BaseLibrary",
-        "projectPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj",
+        "projectUniqueName": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Application\\CRMS.Application.csproj",
+        "projectName": "CRMS.Application",
+        "projectPath": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Application\\CRMS.Application.csproj",
         "packagesPath": "C:\\Users\\raazc\\.nuget\\packages\\",
-        "outputPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\obj\\",
+        "outputPath": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,24 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Blazored.LocalStorage": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -69,14 +87,14 @@
         }
       }
     },
-    "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.Blazor\\CRMS.Blazor.csproj": {
+    "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\CRMS.Blazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.Blazor\\CRMS.Blazor.csproj",
+        "projectUniqueName": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\CRMS.Blazor.csproj",
         "projectName": "CRMS.Blazor",
-        "projectPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.Blazor\\CRMS.Blazor.csproj",
+        "projectPath": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\CRMS.Blazor.csproj",
         "packagesPath": "C:\\Users\\raazc\\.nuget\\packages\\",
-        "outputPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.Blazor\\obj\\",
+        "outputPath": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -98,11 +116,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj": {
-                "projectPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj"
+              "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Application\\CRMS.Application.csproj": {
+                "projectPath": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Application\\CRMS.Application.csproj"
               },
-              "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj": {
-                "projectPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj"
+              "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Domain\\CRMS.Domain.csproj": {
+                "projectPath": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Domain\\CRMS.Domain.csproj"
               }
             }
           }
@@ -157,15 +175,15 @@
             },
             "Syncfusion.Blazor.Buttons": {
               "target": "Package",
-              "version": "[23.1.36, )"
+              "version": "[24.2.9, )"
             },
             "Syncfusion.Blazor.Popups": {
               "target": "Package",
-              "version": "[23.1.36, )"
+              "version": "[24.2.9, )"
             },
             "Syncfusion.Blazor.Themes": {
               "target": "Package",
-              "version": "[23.1.36, )"
+              "version": "[24.2.9, )"
             }
           },
           "imports": [
@@ -199,14 +217,14 @@
         }
       }
     },
-    "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj": {
+    "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Domain\\CRMS.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj",
-        "projectName": "CRMS.ClientLibrary",
-        "projectPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.ClientLibrary\\CRMS.ClientLibrary.csproj",
+        "projectUniqueName": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Domain\\CRMS.Domain.csproj",
+        "projectName": "CRMS.Domain",
+        "projectPath": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Domain\\CRMS.Domain.csproj",
         "packagesPath": "C:\\Users\\raazc\\.nuget\\packages\\",
-        "outputPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.ClientLibrary\\obj\\",
+        "outputPath": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -227,11 +245,7 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {
-              "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj": {
-                "projectPath": "D:\\School Files\\FInalYear\\CRMSProject\\CRMS.BaseLibrary\\CRMS.BaseLibrary.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -248,24 +262,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "Blazored.LocalStorage": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            },
-            "Microsoft.AspNetCore.Components.Authorization": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.Extensions.Http": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "System.IdentityModel.Tokens.Jwt": {
-              "target": "Package",
-              "version": "[7.3.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

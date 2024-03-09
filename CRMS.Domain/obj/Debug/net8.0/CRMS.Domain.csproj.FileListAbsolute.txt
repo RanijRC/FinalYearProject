@@ -1,0 +1,11 @@
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Domain\bin\Debug\net8.0\CRMS.Domain.deps.json
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Domain\bin\Debug\net8.0\CRMS.Domain.dll
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Domain\bin\Debug\net8.0\CRMS.Domain.pdb
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Domain\obj\Debug\net8.0\CRMS.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Domain\obj\Debug\net8.0\CRMS.Domain.AssemblyInfoInputs.cache
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Domain\obj\Debug\net8.0\CRMS.Domain.AssemblyInfo.cs
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Domain\obj\Debug\net8.0\CRMS.Domain.csproj.CoreCompileInputs.cache
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Domain\obj\Debug\net8.0\CRMS.Domain.dll
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Domain\obj\Debug\net8.0\refint\CRMS.Domain.dll
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Domain\obj\Debug\net8.0\CRMS.Domain.pdb
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Domain\obj\Debug\net8.0\ref\CRMS.Domain.dll

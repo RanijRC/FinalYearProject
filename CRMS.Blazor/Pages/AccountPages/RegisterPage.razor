@@ -1,5 +1,4 @@
 ﻿@page "/identity/account/register"
-@using Syncfusion.Blazor.Popups
 @layout AuthenticationLayout
 @inject SfDialogService DialogService
 <div class="container">
@@ -8,13 +7,14 @@
         <div class="col-lg-4">
             <EditForm Enhance Model="User" OnValidSubmit="HandleRegistration">
                 <DataAnnotationsValidator />
+                <ValidationSummary />
                 <div class="card bg-dark" style="opacity:0.5; margin-top:50%; border-radius:10px; color:white; font-weight:bold">
                     <div class="card-header text-center fs-5 mb-2">Register</div>
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4"></div>
                             <div class="col-lg-4 col-md-4 col-sm-4 d-flex justify-content-center">
-                                <img style="border-radius:20px" src="../images/logos/" height="50" width="50" />
+                                <img style="border-radius:20px" src="" height="50" width="50" />
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4"></div>
                         </div>
@@ -33,7 +33,7 @@
                             <input type="password" @bind="User.Password" class="form-control"></input>
                         </div>
                         <div class="form-group mt-3">
-                            <label class="form-label">Confirm Password</label>
+                            <label class="form-label">Password</label>
                             <input type="password" @bind="User.ConfirmPassword" class="form-control"></input>
                         </div>
                         <div class="form-group mt-3">
@@ -48,22 +48,22 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <span class="text-canter">
+                        <span class="text-center">
                             Already have a account? |
-                            <a class="btn-link" href="identity/account/login">Sign In</a>
+                            <a class="btn-Link" href="identity/account/register">Sign In</a>
                         </span>
                         <ValidationSummary />
                     </div>
                 </div>
             </EditForm>
         </div>
-        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+        </div>
     </div>
 </div>
-@code{
+@code {
     public bool ShowLoadingButton { get; set; } = false;
-    AccountRegister User = new();
-
+    Register User = new();
     [CascadingParameter] public Task<AuthenticationState> AuthenticationState { get; set; }
     protected async override Task OnInitializedAsync()
     {
@@ -74,21 +74,21 @@
     {
         ShowLoadingButton = true;
         var result = await accountService.CreateAsync(User);
-        if (result.Flag)
+        if (result.flag)
         {
             await DisplayDialog(result.Message, "Success");
             User = new();
         }
         else
         {
-            await DisplayDialog(result.Message, "Alert");
+            await DisplayDialog(result.Message, "Alert!");
         }
         ShowLoadingButton = false;
     }
 
-    private async Task DisplayDialog(string content, string title)
+    private async Task DisplayDialog(string content, string Title)
     {
-        await DialogService.AlertAsync(content, title);
+        await DialogService.AlertAsync(content, Title);
     }
 
     private async Task CheckUserAuthentication()
@@ -96,6 +96,6 @@
         var user = (await AuthenticationState).User;
         bool isUserAuthenticated = user.Identity!.IsAuthenticated;
         if (!isUserAuthenticated)
-            NavManager.NavigateTo("/home/dashboard");
+            NavManager.NavigateTo("/identity/account/login");
     }
 }

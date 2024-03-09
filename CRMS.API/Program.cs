@@ -1,7 +1,7 @@
-using CRMS.ServerLibrary.Data;
-using CRMS.ServerLibrary.Helpers;
-using CRMS.ServerLibrary.Repositories.Contracts;
-using CRMS.ServerLibrary.Repositories.Implementation;
+using CRMS.Infrastructure.Data;
+using CRMS.Infrastructure.Helpers;
+using CRMS.Infrastructure.Repositories.Contracts;
+using CRMS.Infrastructure.Repositories.Implementation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -15,16 +15,27 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "AllowBlazorOrigin",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:5209",
+                "https://localhost:7121")
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials();
+        });
+});
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") ??
+        throw new InvalidOperationException("Sorry your connection is not found"));
+});
 
 builder.Services.Configure<JwtSection>(builder.Configuration.GetSection("JwtSection"));
 var jwtSection = builder.Configuration.GetSection(nameof(JwtSection)).Get<JwtSection>();
-
-//Services for Db
-builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CRMSQL") ??
-       throw new InvalidOperationException("Sorry!! Your connection is not found, Please try again! "));
-});
 
 builder.Services.AddAuthentication(options =>
 {
@@ -44,18 +55,7 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-
-builder.Services.AddScoped<IUserAccount, UserAccountRepository>();
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowBlazorWasm",
-        builder => builder
-        .WithOrigins("http://localhost:5204", "https://localhost:7168")
-            .AllowAnyMethod()
-            .AllowAnyHeader()
-            .AllowCredentials());
-});
-
+builder.Services.AddScoped<IUserAccount,UserAccountRepository>();  
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -66,8 +66,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseCors("AllowBlazorWasm");
-
+app.UseRouting();
+app.UseCors("AllowBlazorOrigin");
 app.UseAuthentication();
 app.UseAuthorization();
 

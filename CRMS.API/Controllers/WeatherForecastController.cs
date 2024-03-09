@@ -1,11 +1,11 @@
-using CRMS.BaseLibrary.DTOs;
+using CRMS.Application.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRMS.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [Authorize(Roles = "Admin")]
     public class WeatherForecastController : ControllerBase
     {

@@ -7,19 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-	<PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
-	<PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.2" />
-	<PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />  
+    <PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.2" PrivateAssets="all" />
-    <PackageReference Include="Syncfusion.Blazor.Buttons" Version="23.1.36" />
-    <PackageReference Include="Syncfusion.Blazor.Popups" Version="23.1.36" />
-    <PackageReference Include="Syncfusion.Blazor.Themes" Version="23.1.36" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageReference Include="Syncfusion.Blazor.Buttons" Version="24.2.9" />
+    <PackageReference Include="Syncfusion.Blazor.Popups" Version="24.2.9" />
+    <PackageReference Include="Syncfusion.Blazor.Themes" Version="24.2.9" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CRMS.BaseLibrary\CRMS.BaseLibrary.csproj" />
-    <ProjectReference Include="..\CRMS.ClientLibrary\CRMS.ClientLibrary.csproj" />
+    <ProjectReference Include="..\CRMS.Application\CRMS.Application.csproj" />
+    <ProjectReference Include="..\CRMS.Domain\CRMS.Domain.csproj" />
   </ItemGroup>
 
 </Project>
