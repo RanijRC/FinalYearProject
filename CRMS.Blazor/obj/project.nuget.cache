@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "klxnKbf101y3mL8QiYq+hALwNCl44d5S0RZrKzZfR8g8AdVX3naDI1Yek5OEIoXizK3wFAYQFYvFRCn3ypCqlA==",
+  "dgSpecHash": "D77L7mKafj4ZNwVXYJ3UvAofTfZnMtVTP62fvOl+19OljLwzNHQwmSQoWijGPVq8yxwhnBnvNSJA4sEB2Jzebg==",
   "success": true,
   "projectFilePath": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\CRMS.Blazor.csproj",
   "expectedPackageFiles": [
@@ -44,8 +44,8 @@
     "C:\\Users\\raazc\\.nuget\\packages\\microsoft.jsinterop\\8.0.2\\microsoft.jsinterop.8.0.2.nupkg.sha512",
     "C:\\Users\\raazc\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.2\\microsoft.jsinterop.webassembly.8.0.2.nupkg.sha512",
     "C:\\Users\\raazc\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
-    "C:\\Users\\raazc\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.2\\microsoft.net.illink.tasks.8.0.2.nupkg.sha512",
-    "C:\\Users\\raazc\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.2\\microsoft.net.sdk.webassembly.pack.8.0.2.nupkg.sha512",
+    "C:\\Users\\raazc\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.3\\microsoft.net.illink.tasks.8.0.3.nupkg.sha512",
+    "C:\\Users\\raazc\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.3\\microsoft.net.sdk.webassembly.pack.8.0.3.nupkg.sha512",
     "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\24.2.9\\syncfusion.blazor.buttons.24.2.9.nupkg.sha512",
     "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\24.2.9\\syncfusion.blazor.core.24.2.9.nupkg.sha512",
     "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\24.2.9\\syncfusion.blazor.popups.24.2.9.nupkg.sha512",
@@ -57,7 +57,7 @@
     "C:\\Users\\raazc\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\raazc\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\raazc\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
-    "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.2\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.2.nupkg.sha512"
+    "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.3.nupkg.sha512"
   ],
   "logs": []
 }

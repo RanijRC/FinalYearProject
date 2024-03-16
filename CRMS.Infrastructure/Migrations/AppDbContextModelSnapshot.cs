@@ -44,6 +44,50 @@ namespace CRMS.Infrastructure.Migrations
                     b.ToTable("ApplicationUsers");
                 });
 
+            modelBuilder.Entity("CRMS.Domain.Entities.Branch", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("FacultyId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FacultyId");
+
+                    b.ToTable("Branches");
+                });
+
+            modelBuilder.Entity("CRMS.Domain.Entities.City", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CountryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CountryId");
+
+                    b.ToTable("Cities");
+                });
+
             modelBuilder.Entity("CRMS.Domain.Entities.Complaint", b =>
                 {
                     b.Property<int>("Id")
@@ -52,48 +96,97 @@ namespace CRMS.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("ComplaintId")
+                    b.Property<int>("BranchId")
                         .HasColumnType("int");
 
                     b.Property<string>("ComplaintName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ComplaintType")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CustomerNumber")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CustomerTelephoneNumber")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("FacultyId")
-                        .HasColumnType("int");
 
                     b.Property<string>("FeedbackComments")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("GeneralDepartmentId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Other")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Photo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TownId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BranchId");
+
+                    b.HasIndex("TownId");
+
+                    b.ToTable("Complaints");
+                });
+
+            modelBuilder.Entity("CRMS.Domain.Entities.Country", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ComplaintId");
+                    b.ToTable("Countrys");
+                });
 
-                    b.HasIndex("FacultyId");
+            modelBuilder.Entity("CRMS.Domain.Entities.DataPending", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.HasIndex("GeneralDepartmentId");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.ToTable("Complaints");
+                    b.Property<DateTime>("ComplaintDateEnd")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ComplaintDateStart")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ComplaintNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CustomerId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Other")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("DataPendings");
                 });
 
             modelBuilder.Entity("CRMS.Domain.Entities.Faculty", b =>
@@ -104,10 +197,16 @@ namespace CRMS.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("GeneralDepartmentId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("GeneralDepartmentId");
 
                     b.ToTable("Faculties");
                 });
@@ -121,6 +220,7 @@ namespace CRMS.Infrastructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -163,6 +263,28 @@ namespace CRMS.Infrastructure.Migrations
                     b.ToTable("SystemRoles");
                 });
 
+            modelBuilder.Entity("CRMS.Domain.Entities.Town", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CityId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CityId");
+
+                    b.ToTable("Towns");
+                });
+
             modelBuilder.Entity("CRMS.Domain.Entities.UserRole", b =>
                 {
                     b.Property<int>("Id")
@@ -182,40 +304,95 @@ namespace CRMS.Infrastructure.Migrations
                     b.ToTable("UserRoles");
                 });
 
-            modelBuilder.Entity("CRMS.Domain.Entities.Complaint", b =>
+            modelBuilder.Entity("CRMS.Domain.Entities.Branch", b =>
                 {
-                    b.HasOne("CRMS.Domain.Entities.Complaint", null)
-                        .WithMany("Complaints")
-                        .HasForeignKey("ComplaintId");
-
                     b.HasOne("CRMS.Domain.Entities.Faculty", "Faculty")
-                        .WithMany("Complaints")
+                        .WithMany("Branches")
                         .HasForeignKey("FacultyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CRMS.Domain.Entities.GeneralDepartment", "GeneralDepartment")
-                        .WithMany("Complaints")
-                        .HasForeignKey("GeneralDepartmentId")
+                    b.Navigation("Faculty");
+                });
+
+            modelBuilder.Entity("CRMS.Domain.Entities.City", b =>
+                {
+                    b.HasOne("CRMS.Domain.Entities.Country", "Country")
+                        .WithMany("Cities")
+                        .HasForeignKey("CountryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Faculty");
-
-                    b.Navigation("GeneralDepartment");
+                    b.Navigation("Country");
                 });
 
             modelBuilder.Entity("CRMS.Domain.Entities.Complaint", b =>
                 {
-                    b.Navigation("Complaints");
+                    b.HasOne("CRMS.Domain.Entities.Branch", "Branch")
+                        .WithMany("Complaints")
+                        .HasForeignKey("BranchId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CRMS.Domain.Entities.Town", "Town")
+                        .WithMany("Complaints")
+                        .HasForeignKey("TownId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Branch");
+
+                    b.Navigation("Town");
                 });
 
             modelBuilder.Entity("CRMS.Domain.Entities.Faculty", b =>
                 {
+                    b.HasOne("CRMS.Domain.Entities.GeneralDepartment", "GeneralDepartment")
+                        .WithMany("Faculties")
+                        .HasForeignKey("GeneralDepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("GeneralDepartment");
+                });
+
+            modelBuilder.Entity("CRMS.Domain.Entities.Town", b =>
+                {
+                    b.HasOne("CRMS.Domain.Entities.City", "City")
+                        .WithMany("Towns")
+                        .HasForeignKey("CityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("City");
+                });
+
+            modelBuilder.Entity("CRMS.Domain.Entities.Branch", b =>
+                {
                     b.Navigation("Complaints");
                 });
 
+            modelBuilder.Entity("CRMS.Domain.Entities.City", b =>
+                {
+                    b.Navigation("Towns");
+                });
+
+            modelBuilder.Entity("CRMS.Domain.Entities.Country", b =>
+                {
+                    b.Navigation("Cities");
+                });
+
+            modelBuilder.Entity("CRMS.Domain.Entities.Faculty", b =>
+                {
+                    b.Navigation("Branches");
+                });
+
             modelBuilder.Entity("CRMS.Domain.Entities.GeneralDepartment", b =>
+                {
+                    b.Navigation("Faculties");
+                });
+
+            modelBuilder.Entity("CRMS.Domain.Entities.Town", b =>
                 {
                     b.Navigation("Complaints");
                 });

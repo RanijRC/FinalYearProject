@@ -1,3 +1,4 @@
+using CRMS.Domain.Entities;
 using CRMS.Infrastructure.Data;
 using CRMS.Infrastructure.Helpers;
 using CRMS.Infrastructure.Repositories.Contracts;
@@ -56,6 +57,15 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddScoped<IUserAccount,UserAccountRepository>();  
+builder.Services.AddScoped<IGenericRepositoryInterface<GeneralDepartment>,GeneralDepartmentRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<Faculty>, FacultyRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<Branch>, BranchRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<Country>, CountryRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<City>, CityRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<Town>, TownRepository>();
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
