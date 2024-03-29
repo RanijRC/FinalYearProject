@@ -1,6 +1,5 @@
 ﻿@page "/identity/account/register"
 @layout AuthenticationLayout
-@inject SfDialogService DialogService
 <div class="container">
     <div class="row">
         <div class="col-lg-4"></div>
@@ -88,7 +87,7 @@
 
     private async Task DisplayDialog(string content, string Title)
     {
-        await DialogService.AlertAsync(content, Title);
+        await dialogService.AlertAsync(content, Title);
     }
 
     private async Task CheckUserAuthentication()

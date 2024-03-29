@@ -1,7 +1,5 @@
 ﻿@page "/identity/account/login"
-@using CRMS.Application.Helpers
 @layout AuthenticationLayout
-@inject SfDialogService DialogService
 <div class="container">
     <div class="row">
         <div class="col-lg-4"></div>
@@ -81,7 +79,7 @@
 
     private async Task DisplayDialog(string content, string title)
     {
-        await DialogService.AlertAsync(content, title);
+        await dialogService.AlertAsync(content, title);
     }
 
     private async Task CheckUserAuthentication()

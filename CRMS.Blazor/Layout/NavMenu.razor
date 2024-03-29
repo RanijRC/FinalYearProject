@@ -1,7 +1,6 @@
 ﻿@page "/nav"
 @using CRMS.Blazor.ApplicationState
 @using Microsoft.AspNetCore.Components.Authorization
-@inject DepartmentState departmentState
 <AuthorizeView>
     <Authorized>
         <div class="top-row ps-3 navbar navbar-dark">
@@ -122,7 +121,7 @@
 
     void GeneralDepartmentClicked()
     {
-        departmentState.GeneralDepartmentClicked();
+        allState.GeneralDepartmentClicked();
     }
 
 }

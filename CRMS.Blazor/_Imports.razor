@@ -1,6 +1,7 @@
 ﻿@using System.Net.Http
 @using System.Net.Http.Json
 @using CRMS.Application.Services.Contracts
+@using CRMS.Blazor.ApplicationState
 @using Microsoft.AspNetCore.Components.Authorization
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Routing
@@ -11,11 +12,34 @@
 @using CRMS.Blazor
 @using CRMS.Blazor.Layout
 @using CRMS.Domain.Entities
+@using CRMS.Application.Helpers
 
 @using CRMS.Application.DTOs
 @using CRMS.Blazor.Pages.OtherPages
 @using Syncfusion.Blazor.Popups
+@using CRMS.Blazor.Pages.ContentPages.FacultyPages
 
 @inject NavigationManager NavManager
 @inject AuthenticationStateProvider AuthStateProvider
+
+@*/Authentication*@
 @inject IUserAccountService accountService
+
+@*/Navbar tabs communication state handling*@
+@inject AllState allState
+
+@* /Syncfusion dialog service*@
+@inject SfDialogService dialogService
+
+@*/General Department /Department / Branch*@
+@inject IGenericServiceInterface<GeneralDepartment> generalDepartmentService
+@inject IGenericServiceInterface<Faculty> facultyService
+@inject IGenericServiceInterface<Branch> branchService
+
+@*/Country / City / Town*@
+@inject IGenericServiceInterface<Country> countryService
+@inject IGenericServiceInterface<City> cityService
+@inject IGenericServiceInterface<Town> townService
+
+@*//Complaint*@
+@inject IGenericServiceInterface<Complaint> complaintService
