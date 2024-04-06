@@ -14,5 +14,6 @@ namespace CRMS.Application.Helpers
         public const string CountryBaseUrl = "api/country";
         public const string CityBaseUrl = "api/city";
         public const string ComplaintBaseUrl = "api/complaint";
+        public const string TownBaseUrl = "api/town";
     }
 }

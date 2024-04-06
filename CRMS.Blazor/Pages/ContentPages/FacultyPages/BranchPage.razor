@@ -109,12 +109,12 @@
         bool successCheck = false;
         if (Branch.Id > 0)
         {
-            var result = await branchService.Update(Branch, Constants.BranchBaseUrl);
+            var result = await branchService.Update(branch, Constants.BranchBaseUrl);
             successCheck = await DisplayMessage(result.flag, result.Message);
         }
         else
         {
-            var response = await branchService.Insert(Branch, Constants.BranchBaseUrl);
+            var response = await branchService.Insert(branch, Constants.BranchBaseUrl);
             successCheck = await DisplayMessage(response.flag, response.Message);
         }
         if (successCheck)

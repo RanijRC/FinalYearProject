@@ -32,5 +32,27 @@ namespace CRMS.API.Controllers
             var result = await accountInterface.RefreshTokenAsync(token);
             return Ok(result);
         }
+
+        [HttpGet("users")]
+        public async Task<IActionResult> GetUsersAsync()
+        {
+            var users = await accountInterface.GetUsers();
+            if (users == null) return NotFound();
+            return Ok(users);
+        }
+
+        [HttpPut("update-user")]
+        public async Task<IActionResult> UpdateUser(ManageUser manageUser)
+        {
+            var result = await accountInterface.UpdateUser(manageUser);
+            return Ok(result);
+        }
+
+        [HttpDelete("delete-user/{id}")]
+        public async Task<IActionResult> DeleteUser(int id)
+        {
+            var result = await accountInterface.DeleteUser(id);
+            return Ok(result);
+        }
     }
 }

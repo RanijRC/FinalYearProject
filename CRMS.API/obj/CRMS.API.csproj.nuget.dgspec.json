@@ -135,7 +135,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Domain\\CRMS.Domain.csproj": {
+                "projectPath": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Domain\\CRMS.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
