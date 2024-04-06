@@ -2,7 +2,9 @@ D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFi
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\bin\Debug\net8.0\CRMS.Infrastructure.runtimeconfig.json
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\bin\Debug\net8.0\CRMS.Infrastructure.dll
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\bin\Debug\net8.0\CRMS.Infrastructure.pdb
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\bin\Debug\net8.0\CRMS.Application.dll
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\bin\Debug\net8.0\CRMS.Domain.dll
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\bin\Debug\net8.0\CRMS.Application.pdb
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\bin\Debug\net8.0\CRMS.Domain.pdb
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\obj\Debug\net8.0\CRMS.Infrastructure.csproj.AssemblyReference.cache
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\obj\Debug\net8.0\CRMS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
@@ -15,5 +17,3 @@ D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFi
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\obj\Debug\net8.0\CRMS.Infrastructure.pdb
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\obj\Debug\net8.0\CRMS.Infrastructure.genruntimeconfig.cache
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\obj\Debug\net8.0\ref\CRMS.Infrastructure.dll
-D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\bin\Debug\net8.0\CRMS.Application.dll
-D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Infrastructure\bin\Debug\net8.0\CRMS.Application.pdb

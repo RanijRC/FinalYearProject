@@ -1,6 +1,7 @@
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Application\bin\Debug\net8.0\CRMS.Application.deps.json
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Application\bin\Debug\net8.0\CRMS.Application.dll
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Application\bin\Debug\net8.0\CRMS.Application.pdb
+D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Application\obj\Debug\net8.0\CRMS.Application.csproj.AssemblyReference.cache
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Application\obj\Debug\net8.0\CRMS.Application.GeneratedMSBuildEditorConfig.editorconfig
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Application\obj\Debug\net8.0\CRMS.Application.AssemblyInfoInputs.cache
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Application\obj\Debug\net8.0\CRMS.Application.AssemblyInfo.cs
@@ -9,4 +10,3 @@ D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFi
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Application\obj\Debug\net8.0\refint\CRMS.Application.dll
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Application\obj\Debug\net8.0\CRMS.Application.pdb
 D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Application\obj\Debug\net8.0\ref\CRMS.Application.dll
-D:\School Files\Year Files\Year 3\Semester 2\Application Development\repo\CRMSFinalProject\CRMS.Application\obj\Debug\net8.0\CRMS.Application.csproj.AssemblyReference.cache

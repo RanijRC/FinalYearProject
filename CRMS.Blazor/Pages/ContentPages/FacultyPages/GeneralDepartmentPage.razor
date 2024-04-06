@@ -7,37 +7,45 @@
                 <div class="card">
                     <div class="card-header">
                         <h4 class="float-start">General Department</h4>
-                        <button class="btn btn-outline-success float-end" @onclick="OpenDialog"><i class="bi bi-plus-circle-dotted"></i>Add Faculty</button>
+                        <button class="btn btn-outline-success float-end" @onclick="OpenDialog"><i class="bi bi-plus-circle-dotted"></i>Add GeneralDep</button>
                     </div>
-                    <div class="card-header">
+                    <div class="card-header" style="max-height:580px; overflow-x:hidden; overflow-y:scroll;">
                         <div class="card-body">
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
+                                        <th scope="col">Id</th>
+                                        <th scope="col">General Department</th>
+                                        <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>mdo</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>fat</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the bird</td>
-                                        <td>twitter</td>
-                                    </tr>
+                                    @if(GeneralDepartment is not null)
+                                    {
+                                        int count = 1;
+                                        foreach(var item in GeneralDepartments)
+                                        {
+                                            <tr>
+                                                <th scope="row">@count</th>
+                                                <td>@item.Id</td>
+                                                <td>@item.Name</td>
+                                                <td>
+                                                    <i class="bi bi-pencil text-info" id="cursorStyle"
+                                                    @onclick="()=>EditClicked(item)"></i>
+                                                    <i class="bi bi-trash text-danger" id="cursorStyle"
+                                                    @onclick="() => DeleteClicked(item)"></i>
+                                                </td>
+                                            </tr>
+                                            count++;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <tr>
+                                            <td colspan="4"><div class="alert alert-info text-center">No General Department added yet!</div></td>
+                                        </tr>
+                                    }
                                 </tbody>
                             </table>
                         </div>
@@ -50,6 +58,12 @@
 <GeneralDepartmentDialog @ref="generalDepartmentDialog"
                          HandleSaveOperationEvent="HandleSaveOperationEvent"
                          GeneralDepartment="GeneralDepartment"/>
+
+<style>
+    .cursorStyle{
+        cursor:pointer
+    }
+</style>
 @code {
     GeneralDepartmentDialog? generalDepartmentDialog;
     GeneralDepartment GeneralDepartment = new();
@@ -72,6 +86,7 @@
         generalDepartmentDialog?.OpenDialog();
     }
 
+    //Add or Update
     private async Task HandleSaveOperationEvent(GeneralDepartment generalDepartment)
     {
         bool successCheck = false;
@@ -95,11 +110,23 @@
         }
     }
 
+    //Edit
     private void EditClicked(GeneralDepartment dep)
     {
         generalDepartmentDialog?.ChangeTitle("Update");
         GeneralDepartment = dep;
         OpenDialog();
+    }
+
+    //Delete
+    private async Task DeleteClicked(GeneralDepartment dep)
+    {
+        bool confirm = await dialogService.ConfirmAsync($"Are you sure you wanna delete {dep.Name}?", "Confirm Delete");
+        if (!confirm) return;
+
+        var response = await generalDepartmentService.DeleteById(dep.Id, Constants.GeneralDepartmentBaseUrl);
+        if (await DisplayMessage(response.flag, response.Message))
+            await GetGeneralDepartments();
     }
 
     private async Task<bool> DisplayMessage(bool flag, string message)

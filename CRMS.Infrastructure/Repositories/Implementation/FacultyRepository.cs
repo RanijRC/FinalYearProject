@@ -19,7 +19,10 @@ namespace CRMS.Infrastructure.Repositories.Implementation
             return Success();
         }
 
-        public async Task<List<Faculty>> GetAll() => await appDbContext.Faculties.ToListAsync();
+        public async Task<List<Faculty>> GetAll() => await appDbContext
+            .Faculties.AsNoTracking()
+            .Include(gd => gd.GeneralDepartment)
+            .ToListAsync();
 
         public async Task<Faculty> GetById(int id) => await appDbContext.Faculties.FindAsync(id);
 
@@ -37,6 +40,7 @@ namespace CRMS.Infrastructure.Repositories.Implementation
             var dep = await appDbContext.Faculties.FindAsync(item.Id);
             if (dep is null) return NotFound();
             dep.Name = item.Name;
+            dep.GeneralDepartmentId = item.GeneralDepartmentId;
             await Commit();
             return Success();
         }

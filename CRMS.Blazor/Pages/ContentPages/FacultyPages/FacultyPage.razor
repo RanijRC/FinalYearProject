@@ -1,0 +1,163 @@
+﻿@implements IDisposable
+@if (allState.ShowFaculty)
+{
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="float-start">Faculties</h4>
+                        <button class="btn btn-outline-success float-end" @onclick="AddButtonClicked">
+                            <i class="bi bi-plus-circle-dotted"></i>Add Faculty</button>
+                    </div>
+                    <div class="card-header" style="max-height:580px; overflow-x:hidden; overflow-y:scroll">
+                        <div class="card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Id</th>
+                                        <th scope="col">General Department</th>
+                                        <th scope="col">Faculty</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Faculties is not null)
+                                    {
+                                        int count = 1;
+                                        foreach(var item in Faculties)
+                                        {
+                                            <tr>
+                                                <th scope="row">@count</th>
+                                                <td>@item.Id</td>
+                                                <td>@item.GeneralDepartment!.Name</td>
+                                                <td>@item.Name</td>
+                                                <td>
+                                                    <i class="bi bi-pencil text-info" id="cursorStyle" @onclick="()=>EditClicked(item)"></i>
+                                                    <i class="bi bi-trash text-danger" id="cursorStyle" @onclick="()=>DeleteClicked(item)"></i>
+                                                </td>
+                                            </tr>
+                                            count++;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <tr>
+                                            <td colspan="4"><div class="alert alert-info text-center">No Department added yet!</div></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<style>
+    #cursorStyle{
+        cursor:pointer;
+    }
+</style>
+
+<FacultyDialog @ref="facultyDialog"
+                HandleSaveOperationEvent="HandleSaveOperationEvent"
+                Faculty="Faculty"
+                GeneralDepartments="GeneralDepartments" />
+@code {
+    public string Title { get; set; } = "Add";
+    FacultyDialog? facultyDialog;
+    Faculty Faculty = new();
+    public List<GeneralDepartment> GeneralDepartments { get; set; } = new();
+    public List<Faculty> Faculties { get; set; } = new();
+    protected async override Task OnInitializedAsync()
+    {
+        await GetFaculty();
+        await GetGeneralDepartment();
+        allState.Action += StateHasChanged;
+    }
+
+    private async Task GetFaculty()
+    {
+        Faculties = await facultyService.GetAll(Constants.FacultyBaseUrl);
+    }
+
+    private async Task GetGeneralDepartment()
+    {
+        GeneralDepartments = await generalDepartmentService.GetAll(Constants.GeneralDepartmentBaseUrl);
+    }
+
+    void AddButtonClicked()
+    {
+        facultyDialog?.ChangeTitle("Add");
+        Faculty = new();
+        OpenDialog();
+    }
+
+    void OpenDialog()
+    {
+        facultyDialog?.OpenDialog();
+    }
+
+    private async Task HandleSaveOperationEvent(Faculty faculty)
+    {
+        bool successCheck = false;
+        if(Faculty.Id > 0)
+        {
+            var result = await facultyService.Update(Faculty, Constants.FacultyBaseUrl);
+            successCheck = await DisplayMessage(result.flag, result.Message);
+        }
+        else
+        {
+            var response = await facultyService.Insert(Faculty, Constants.FacultyBaseUrl);
+            successCheck = await DisplayMessage(response.flag, response.Message);
+        }
+        if (successCheck)
+        {
+            Faculty = new();
+            await GetFaculty();
+            facultyDialog?.ChangeTitle("Add");
+        }
+    }
+
+    private void EditClicked(Faculty fac)
+    {
+        facultyDialog?.ChangeTitle("Update");
+        Faculty = fac;
+        OpenDialog();
+    }
+
+    private async Task DeleteClicked(Faculty fac)
+    {
+        bool confirm = await dialogService.ConfirmAsync($"Are u sure u wanna delete {fac.Name}?", "Confirm Delete");
+        if (!confirm) return;
+
+        var response = await facultyService.DeleteById(fac.Id, Constants.FacultyBaseUrl);
+        var result = await DisplayMessage(response.flag, response.Message);
+        if (result)
+            await GetFaculty();
+    }
+
+    private async Task<bool> DisplayMessage(bool flag, string message)
+    {
+        if (flag)
+        {
+            await dialogService.AlertAsync(message, "Success Operation");
+            return true;
+        }
+        else
+        {
+            await dialogService.AlertAsync(message, "Alert");
+            return false;
+        }
+    }
+
+    public void Dispose()
+    {
+        allState.Action -= StateHasChanged;
+    }
+
+}

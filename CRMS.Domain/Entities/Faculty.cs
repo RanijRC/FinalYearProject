@@ -1,4 +1,5 @@
 ﻿using CRMS.Domain.Shared;
+using System.Text.Json.Serialization;
 
 namespace CRMS.Domain.Entities
 {
@@ -9,6 +10,7 @@ namespace CRMS.Domain.Entities
         public int GeneralDepartmentId { get; set; }
 
         //One to many relationship with Branch
+        [JsonIgnore]
         public List<Branch>? Branches { get; set; }
     }
 }
