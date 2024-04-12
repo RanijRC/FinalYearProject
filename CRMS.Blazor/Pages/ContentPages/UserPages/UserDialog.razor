@@ -20,14 +20,14 @@
                             {
                                 string selected = ManageUser!.Role!;
                                 <SfDropDownList TValue="string" TItem="SystemRole" Placeholder="@selected" DataSource="SystemRoles">
-                                    <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
+                                    <DropDownListFieldSettings Value="Name" Text="Name"></DropDownListFieldSettings>
                                     <DropDownListEvents TValue="string" TItem="SystemRole" ValueChange="OnValueChange"></DropDownListEvents>
                                 </SfDropDownList>
                             }
                             else
                             {
                                 <SfDropDownList TValue="string" TItem="SystemRole" Placeholder="Select Role" DataSource="SystemRoles">
-                                    <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
+                                    <DropDownListFieldSettings Value="Name" Text="Name"></DropDownListFieldSettings>
                                     <DropDownListEvents TValue="string" TItem="SystemRole" ValueChange="OnValueChange"></DropDownListEvents>
                                 </SfDropDownList>
                             }

@@ -48,6 +48,14 @@ namespace CRMS.API.Controllers
             return Ok(result);
         }
 
+        [HttpGet("roles")]
+        public async Task<IActionResult> GetRoles()
+        {
+            var users = await accountInterface.GetRoles();
+            if(users == null) return NotFound();
+            return Ok(users);
+        }
+
         [HttpDelete("delete-user/{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {

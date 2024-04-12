@@ -51,7 +51,7 @@ namespace CRMS.Application.Services.Implementation
             var result = await httpClient.PutAsJsonAsync($"{AuthUrl}/update-user", user);
             if (!result.IsSuccessStatusCode) return new GeneralResponse(false, "Error occured!!");
 
-            return await result.Content.ReadFromJsonAsync<GeneralResponse>();
+            return await result.Content.ReadFromJsonAsync<GeneralResponse>()!;
         }
 
         public async Task<List<SystemRole>> GetRoles()
@@ -64,10 +64,10 @@ namespace CRMS.Application.Services.Implementation
         public async Task<GeneralResponse> DeleteUser(int id)
         {
             var httpClient = await getHttpClient.GetPrivateHttpClient();
-            var result = await httpClient.DeleteAsync($"{AuthUrl}/delete-user{id}");
+            var result = await httpClient.DeleteAsync($"{AuthUrl}/delete-user/{id}");
             if (!result.IsSuccessStatusCode) return new GeneralResponse(false, "Error occured!!");
 
-            return await result.Content.ReadFromJsonAsync<GeneralResponse>();
+            return await result.Content.ReadFromJsonAsync<GeneralResponse>()!;
         }
     }
 }

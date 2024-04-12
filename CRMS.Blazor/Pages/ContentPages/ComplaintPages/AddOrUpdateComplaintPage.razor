@@ -1,0 +1,317 @@
+﻿@implements IDisposable
+@if (allState.ShowComplaint)
+{
+    if (ShowAddOrUpdateComplaint)
+    {
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-1 text-center">
+                    <i class="bi bi-x-lg fs-3 fw-bold text-danger" style="cursor:pointer" @onclick="Closeform"></i>
+                </div>
+                <div class="col-lg-6 text-center"><h2>Add Complaint</h2></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 mt-2 mb-5 d-flex justify-content-center">
+                    <div class="hstack">
+                        @if(FirstLayer)
+                        {
+                            <div class="@FloatingNumber1 text-center">1</div>
+                            <div class="@Floatingdiv1 format-border"></div>
+                            <div class="@FloatingNumber2 text-center">2</div>
+                            <div class="@Floatingdiv2 format-border"></div>
+                        }
+                        @if (SecondLayer)
+                        {
+                            <div class="@FloatingNumber1 text-center">1</div>
+                            <div class="@Floatingdiv1 format-border"></div>
+                            <div class="@FloatingNumber1 text-center">2</div>
+                            <div class="@Floatingdiv1 format-border"></div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            @*//Complaint form / first/ second layers*@
+            <div class="col-lg-12">
+                <div class="container-fluid">
+                    @if (FirstLayer)
+                    {
+                        <EditForm Enhance Model="ComplaintGroup1" OnValidSubmit="Form1">
+                            <DataAnnotationsValidator/>
+                            <div class="row">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-4">
+                                    <div class="card-title mb-5 fw-bold" style="font-family:Tahoma">Complaint Information</div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label class="form-label">Complaint Name</label>
+                                            <InputText @bind-Value="ComplaintGroup1.Name" class="form-control" />
+                                            <ValidationMessage For="() => ComplaintGroup1.Name" class="text-danger" />
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <label class="form-label">Telephone</label>
+                                            <InputText @bind-Value="ComplaintGroup1.CustomerTelephoneNumber" class="form-control" />
+                                            <ValidationMessage For="() => ComplaintGroup1.CustomerTelephoneNumber" class="text-danger" />
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <label class="form-label">Complaint Type</label>
+                                            <InputText @bind-Value="ComplaintGroup1.ComplaintType" class="form-control" />
+                                            <ValidationMessage For="() => ComplaintGroup1.ComplaintType" class="text-danger" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-2">
+                                    <div class="card-title mb-5 fw-bold" style="font-family:Tahoma">Other Information</div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label class="form-label">Customer Id</label>
+                                            <InputText @bind-Value="ComplaintGroup1.CustomerNumber" class="form-control" />
+                                            <ValidationMessage For="() => ComplaintGroup1.CustomerNumber" class="text-danger" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label">FeedBack Comments</label>
+                                            <InputText @bind-Value="ComplaintGroup1.FeedbackComments" class="form-control" />
+                                            <ValidationMessage For="() => ComplaintGroup1.FeedbackComments" class="text-danger" />
+                                        </div>
+                                        <div class="form-group mt-5">
+                                            <button class="btn btn-primary float-end mt-4 mb-5" type="submit">
+                                                <i class="bi bi-arrow-right"></i>
+                                                Next
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                            </div>
+                        </EditForm>
+                    }
+                    @if (SecondLayer)
+                    {
+                        @*Complaint Group 2*@
+                        <EditForm Enhance Model="ComplaintGroup2" OnValidSubmit="Form2">
+                            <DataAnnotationsValidator />
+                            <div class="row">
+                                <div class="col-lg-2"></div>
+                                <div class="col-lg-4">
+                                    <div class="card-title mb-5 fw-bold" style="font-family:Tahoma">Issue Information</div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label class="form-label">Complaint Issue</label>
+                                            <InputText @bind-Value="ComplaintGroup2.ComplaintIssue" class="form-control" />
+                                            <ValidationMessage For="() => ComplaintGroup2.ComplaintIssue" class="text-danger" />
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label class="form-label"></label>
+                                            @*<label class="form-label">@(GeneralDepartmentName == "" ? "Select General Department" : $"Selected General Department: {GeneralDepartmentName}")</label>*@
+                                            <SfDropDownList TValue="string" TItem="GeneralDepartment" Placeholder="Select General Department" DataSource="GeneralDepartments">
+                                                <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
+                                                <DropDownListEvents TValue="string" TItem="GeneralDepartment" ValueChange="OnGeneralDepartmentValueChange"></DropDownListEvents>
+                                            </SfDropDownList>
+
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label class="form-label"></label>
+                                            @*<label class="form-label">@(FacultyName == "" ? "Select Faculty" : $"Selected Faculty: {FacultyName}")</label>*@
+                                            <SfDropDownList TValue="string" TItem="Faculty" Placeholder="Select Faculty" DataSource="Faculties">
+                                                <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
+                                                <DropDownListEvents TValue="string" TItem="Faculty" ValueChange="OnFacultyValueChange"></DropDownListEvents>
+                                            </SfDropDownList>
+
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label class="form-label"></label>
+                                            @*<label class="form-label">@(Complaint.Branch == null ? "Select Branch" : $"Selected Branch: {Complaint.Branch.Name}")</label>*@
+                                            <SfDropDownList TValue="string" TItem="Branch" Placeholder="Select Branch" DataSource="Branches">
+                                                <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
+                                                <DropDownListEvents TValue="string" TItem="Branch" ValueChange="OnBranchValueChange"></DropDownListEvents>
+                                            </SfDropDownList>
+                                            <ValidationMessage For="() => ComplaintGroup2.BranchId" class="text-danger"/>
+                                        </div>
+                                        <div class="form-group mt-4 mb-5">
+                                            <button class="btn btn-primary float-start" type="button" @onclick="PrevClicked">
+                                                <i class="bi bi-arrow-left"></i>
+                                                Prev
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card-title mb-5 fw-bold" style="font-family:Tahoma">Location Information</div>
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            @*<label class="form-label">@(CountryName == "" ? "Select Country" : $"Selected Country : {CountryName}")</label>*@
+                                            <SfDropDownList TValue="string" TItem="Country" Placeholder="Select Country" DataSource="Countries">
+                                                <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
+                                                <DropDownListEvents TValue="string" TItem="Country" ValueChange="OnCountryValueChange"></DropDownListEvents>
+                                            </SfDropDownList>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            @*<label class="form-label">@(CityName == "" ? "Select City" : $"Selected Town : {CityName}")</label>*@
+                                            <SfDropDownList TValue="string" TItem="City" Placeholder="Select City" DataSource="Cities">
+                                                <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
+                                                <DropDownListEvents TValue="string" TItem="City" ValueChange="OnCityValueChange"></DropDownListEvents>
+                                            </SfDropDownList>
+                                            <ValidationMessage For="() => ComplaintGroup2.TownId" class="text-danger" />
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            @*<label class="form-label">@(Complaint.Town == null ? "Select Town" : $"Selected Town : {Complaint.Town.Name}")</label>*@
+                                            <SfDropDownList TValue="string" TItem="Town" Placeholder="Select Town" DataSource="Towns">
+                                                <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
+                                                <DropDownListEvents TValue="string" TItem="Town" ValueChange="OnTownValueChange"></DropDownListEvents>
+                                            </SfDropDownList>
+                                            <ValidationMessage For="() => ComplaintGroup2.TownId" class="text-danger"/>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <label class="form-label">Other</label>
+                                            <textarea @bind="ComplaintGroup2.Other" placeholder="Optional" class="form-control" />
+                                        </div>
+                                        <div class="form-group mt-4 mb-5">
+                                            <button class="btn btn-success float-end" type="submit">
+                                                <i class="bi bi-save"></i>
+                                                Save
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                            </div>
+                        </EditForm>
+                    }
+                </div>
+            </div>
+
+        </div>
+    }
+}
+<style>
+    .floatingDiv{
+        width: 500px;
+        background: #228ada;
+        height: 10px;
+    }
+
+    .floatingNumber{
+        border-radius: 50%;
+        color: white;
+        background: #1d1858;
+        width: 20px;
+        height: 20px; 
+    }
+
+    .inactive-div{
+        width: 500px;
+        background: gray;
+        height: 10px;
+    }
+
+    .inactive-span{
+        border-radius: 50%;
+        color: white;
+        background: gray;
+        width: 20px;
+        height: 20px;
+    }
+
+    .format-border{
+        border-radius: 20px;
+    }
+</style>
+
+@code{
+    [Parameter] public Complaint Complaint { get; set; } = new();
+
+    [Parameter] public bool ShowAddOrUpdateComplaint {get; set;}
+    [Parameter] public ComplaintGrouping1 ComplaintGroup1 { get; set; } = new();
+    [Parameter] public ComplaintGrouping2 ComplaintGroup2 { get; set; } = new();
+
+    [Parameter] public List<Country> Countries { get; set; } = new();
+    [Parameter] public List<City> Cities { get; set; } = new();
+    [Parameter] public List<Town> Towns { get; set; } = new();
+
+    [Parameter] public List<GeneralDepartment> GeneralDepartments { get; set; } = new();
+    [Parameter] public List<Faculty> Faculties { get; set; } = new();
+    [Parameter] public List<Branch> Branches { get; set; } = new();
+
+    string FloatingNumber1 = "floatingNumber";
+    string Floatingdiv1 = "floatingDiv";
+
+    string FloatingNumber2 = "inactive-span";
+    string Floatingdiv2 = "inactive-div";
+
+    public bool FirstLayer {get;set;} = true;
+    public bool SecondLayer {get;set;} = false;
+
+    private void ShowLayer2()
+    {
+        FirstLayer = false;
+        SecondLayer = true;
+    }
+
+    void PrevClicked()
+    {
+        FirstLayer = true;
+        SecondLayer = false;
+    }
+
+    protected override void OnInitialized()
+    {
+        allState.Action += StateHasChanged;
+    }
+    //Form closed
+    [Parameter] public EventCallback NotifyParentFormCloseClicked { get; set; }
+    async Task Closeform()
+    {
+        ShowAddOrUpdateComplaint = false;
+        await NotifyParentFormCloseClicked.InvokeAsync();
+    }
+
+    //Country //City //Town
+    [Parameter] public EventCallback<int> HandleCountrySelectedEvent { get; set; }
+    public void OnCountryValueChange(ChangeEventArgs<string, Country> args)
+    {
+        HandleCountrySelectedEvent.InvokeAsync(int.Parse(args.Value));
+    }
+
+    [Parameter] public EventCallback<int> HandleCitySelectedEvent { get; set; }
+    public async void OnCityValueChange(ChangeEventArgs<string, City> args)
+    {
+        await HandleCitySelectedEvent.InvokeAsync(int.Parse(args.Value));
+    }
+
+    public void OnTownValueChange(ChangeEventArgs<string, Town> args)
+    {
+        ComplaintGroup2.TownId = int.Parse(args.Value);
+    }
+
+    //GeneralDepartment //Faculty //Branch
+    [Parameter] public EventCallback<int> HandleGeneralDepartmentSelectedEvent { get; set; }
+    async Task OnGeneralDepartmentValueChange(ChangeEventArgs<string, GeneralDepartment> args)
+    {
+        await HandleGeneralDepartmentSelectedEvent.InvokeAsync(int.Parse(args.Value));
+    }
+
+    [Parameter] public EventCallback<int> HandleFacultySelectedEvent { get; set; }
+    async Task OnFacultyValueChange(ChangeEventArgs<string, Faculty> args)
+    {
+        await HandleFacultySelectedEvent.InvokeAsync(int.Parse(args.Value));
+    }
+
+    public void OnBranchValueChange(ChangeEventArgs<string, Branch> args)
+    {
+        ComplaintGroup2.BranchId = int.Parse(args.Value);
+    }
+
+    //Forms Handling / 1& 2
+    void Form1()
+    {
+
+    }
+
+    void Form2()
+    {
+        
+    }
+
+    public void Dispose() => allState.Action -= StateHasChanged;
+}

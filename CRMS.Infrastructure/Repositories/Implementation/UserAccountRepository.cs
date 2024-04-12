@@ -172,11 +172,6 @@ namespace CRMS.Infrastructure.Repositories.Implementation
             return users;
         }
 
-        private async Task<List<SystemRole>> SystemRoles() => await appDbContext.SystemRoles.AsNoTracking().ToListAsync();
-        private async Task<List<UserRole>> UserRoles() => await appDbContext.UserRoles.AsNoTracking().ToListAsync();
-        private async Task<List<ApplicationUser>> GetApplicationUsers() => await appDbContext.ApplicationUsers.AsNoTracking().ToListAsync();
-
-
         public async Task<GeneralResponse> UpdateUser(ManageUser user)
         {
             var getRole = (await SystemRoles()).FirstOrDefault(r => r.Name!.Equals(user.Role));
@@ -185,6 +180,7 @@ namespace CRMS.Infrastructure.Repositories.Implementation
             await appDbContext.SaveChangesAsync();
             return new GeneralResponse(true, "User role updated successfully");
         }
+
 
         public async Task<List<SystemRole>> GetRoles() => await SystemRoles();
 
@@ -195,5 +191,10 @@ namespace CRMS.Infrastructure.Repositories.Implementation
             await appDbContext.SaveChangesAsync();
             return new GeneralResponse(true, "User successfully deleted");
         }
+
+        private async Task<List<SystemRole>> SystemRoles() => await appDbContext.SystemRoles.AsNoTracking().ToListAsync();
+        private async Task<List<UserRole>> UserRoles() => await appDbContext.UserRoles.AsNoTracking().ToListAsync();
+        private async Task<List<ApplicationUser>> GetApplicationUsers() => await appDbContext.ApplicationUsers.AsNoTracking().ToListAsync();
+
     }
 }

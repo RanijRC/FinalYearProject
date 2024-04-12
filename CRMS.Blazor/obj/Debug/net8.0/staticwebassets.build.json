@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JUbRjvAmL7GtYh1Ku8ORGyfnGYsddQnIry917dlpl1o=",
+  "Hash": "KZirjN7NuBkgw4ca3sjJE8KmgPjuecLXj9vYUHxBrkc=",
   "Source": "CRMS.Blazor",
   "BasePath": "/",
   "Mode": "Root",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\25.1.38\\staticwebassets\\scripts\\sf-floating-action-button.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\25.1.39\\staticwebassets\\scripts\\sf-floating-action-button.min.js",
       "SourceId": "Syncfusion.Blazor.Buttons",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Buttons",
       "RelativePath": "scripts/sf-floating-action-button.min.js",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\25.1.38\\staticwebassets\\scripts\\sf-floating-action-button.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\25.1.39\\staticwebassets\\scripts\\sf-floating-action-button.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\25.1.38\\staticwebassets\\scripts\\sf-speeddial.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\25.1.39\\staticwebassets\\scripts\\sf-speeddial.min.js",
       "SourceId": "Syncfusion.Blazor.Buttons",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Buttons",
       "RelativePath": "scripts/sf-speeddial.min.js",
       "AssetKind": "All",
@@ -52,13 +52,89 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\25.1.38\\staticwebassets\\scripts\\sf-speeddial.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.buttons\\25.1.39\\staticwebassets\\scripts\\sf-speeddial.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\scripts\\popup.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.calendars\\25.1.39\\staticwebassets\\scripts\\sf-calendar.min.js",
+      "SourceId": "Syncfusion.Blazor.Calendars",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.calendars\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Calendars",
+      "RelativePath": "scripts/sf-calendar.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.calendars\\25.1.39\\staticwebassets\\scripts\\sf-calendar.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.calendars\\25.1.39\\staticwebassets\\scripts\\sf-datepicker.min.js",
+      "SourceId": "Syncfusion.Blazor.Calendars",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.calendars\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Calendars",
+      "RelativePath": "scripts/sf-datepicker.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.calendars\\25.1.39\\staticwebassets\\scripts\\sf-datepicker.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.calendars\\25.1.39\\staticwebassets\\scripts\\sf-daterangepicker.min.js",
+      "SourceId": "Syncfusion.Blazor.Calendars",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.calendars\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Calendars",
+      "RelativePath": "scripts/sf-daterangepicker.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.calendars\\25.1.39\\staticwebassets\\scripts\\sf-daterangepicker.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.calendars\\25.1.39\\staticwebassets\\scripts\\sf-timepicker.min.js",
+      "SourceId": "Syncfusion.Blazor.Calendars",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.calendars\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Calendars",
+      "RelativePath": "scripts/sf-timepicker.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.calendars\\25.1.39\\staticwebassets\\scripts\\sf-timepicker.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\scripts\\popup.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/popup.min.js",
       "AssetKind": "All",
@@ -71,13 +147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\scripts\\popup.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\scripts\\popup.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\scripts\\popupsbase.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\scripts\\popupsbase.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/popupsbase.min.js",
       "AssetKind": "All",
@@ -90,13 +166,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\scripts\\popupsbase.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\scripts\\popupsbase.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\scripts\\sf-svg-export.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\scripts\\sf-svg-export.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/sf-svg-export.min.js",
       "AssetKind": "All",
@@ -109,13 +185,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\scripts\\sf-svg-export.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\scripts\\sf-svg-export.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\scripts\\svgbase.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\scripts\\svgbase.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/svgbase.min.js",
       "AssetKind": "All",
@@ -128,13 +204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\scripts\\svgbase.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\scripts\\svgbase.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\scripts\\syncfusion-blazor.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\scripts\\syncfusion-blazor.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/syncfusion-blazor.min.js",
       "AssetKind": "All",
@@ -147,13 +223,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\scripts\\syncfusion-blazor.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\scripts\\syncfusion-blazor.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\scripts\\syncfusion-blazor-base.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\scripts\\syncfusion-blazor-base.min.js",
       "SourceId": "Syncfusion.Blazor.Core",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Core",
       "RelativePath": "scripts/syncfusion-blazor-base.min.js",
       "AssetKind": "All",
@@ -166,13 +242,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.38\\staticwebassets\\scripts\\syncfusion-blazor-base.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.core\\25.1.39\\staticwebassets\\scripts\\syncfusion-blazor-base.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.data\\25.1.38\\staticwebassets\\scripts\\data.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.data\\25.1.39\\staticwebassets\\scripts\\data.min.js",
       "SourceId": "Syncfusion.Blazor.Data",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.data\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.data\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Data",
       "RelativePath": "scripts/data.min.js",
       "AssetKind": "All",
@@ -185,13 +261,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.data\\25.1.38\\staticwebassets\\scripts\\data.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.data\\25.1.39\\staticwebassets\\scripts\\data.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\scripts\\sf-dropdownlist.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\scripts\\sf-dropdownlist.min.js",
       "SourceId": "Syncfusion.Blazor.DropDowns",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.DropDowns",
       "RelativePath": "scripts/sf-dropdownlist.min.js",
       "AssetKind": "All",
@@ -204,13 +280,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\scripts\\sf-dropdownlist.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\scripts\\sf-dropdownlist.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\scripts\\sf-listbox.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\scripts\\sf-listbox.min.js",
       "SourceId": "Syncfusion.Blazor.DropDowns",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.DropDowns",
       "RelativePath": "scripts/sf-listbox.min.js",
       "AssetKind": "All",
@@ -223,13 +299,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\scripts\\sf-listbox.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\scripts\\sf-listbox.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\scripts\\sf-mention.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\scripts\\sf-mention.min.js",
       "SourceId": "Syncfusion.Blazor.DropDowns",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.DropDowns",
       "RelativePath": "scripts/sf-mention.min.js",
       "AssetKind": "All",
@@ -242,13 +318,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\scripts\\sf-mention.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\scripts\\sf-mention.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\scripts\\sf-multiselect.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\scripts\\sf-multiselect.min.js",
       "SourceId": "Syncfusion.Blazor.DropDowns",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.DropDowns",
       "RelativePath": "scripts/sf-multiselect.min.js",
       "AssetKind": "All",
@@ -261,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\scripts\\sf-multiselect.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\scripts\\sf-multiselect.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\scripts\\sortable.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\scripts\\sortable.min.js",
       "SourceId": "Syncfusion.Blazor.DropDowns",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.DropDowns",
       "RelativePath": "scripts/sortable.min.js",
       "AssetKind": "All",
@@ -280,13 +356,32 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.38\\staticwebassets\\scripts\\sortable.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.dropdowns\\25.1.39\\staticwebassets\\scripts\\sortable.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-colorpicker.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.grid\\25.1.39\\staticwebassets\\scripts\\sf-grid.min.js",
+      "SourceId": "Syncfusion.Blazor.Grid",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.grid\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Grid",
+      "RelativePath": "scripts/sf-grid.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.grid\\25.1.39\\staticwebassets\\scripts\\sf-grid.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-colorpicker.min.js",
       "SourceId": "Syncfusion.Blazor.Inputs",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Inputs",
       "RelativePath": "scripts/sf-colorpicker.min.js",
       "AssetKind": "All",
@@ -299,13 +394,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-colorpicker.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-colorpicker.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-maskedtextbox.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-maskedtextbox.min.js",
       "SourceId": "Syncfusion.Blazor.Inputs",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Inputs",
       "RelativePath": "scripts/sf-maskedtextbox.min.js",
       "AssetKind": "All",
@@ -318,13 +413,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-maskedtextbox.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-maskedtextbox.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-numerictextbox.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-numerictextbox.min.js",
       "SourceId": "Syncfusion.Blazor.Inputs",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Inputs",
       "RelativePath": "scripts/sf-numerictextbox.min.js",
       "AssetKind": "All",
@@ -337,13 +432,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-numerictextbox.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-numerictextbox.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-rating.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-rating.min.js",
       "SourceId": "Syncfusion.Blazor.Inputs",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Inputs",
       "RelativePath": "scripts/sf-rating.min.js",
       "AssetKind": "All",
@@ -356,13 +451,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-rating.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-rating.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-signature.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-signature.min.js",
       "SourceId": "Syncfusion.Blazor.Inputs",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Inputs",
       "RelativePath": "scripts/sf-signature.min.js",
       "AssetKind": "All",
@@ -375,13 +470,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-signature.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-signature.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-slider.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-slider.min.js",
       "SourceId": "Syncfusion.Blazor.Inputs",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Inputs",
       "RelativePath": "scripts/sf-slider.min.js",
       "AssetKind": "All",
@@ -394,13 +489,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-slider.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-slider.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-textbox.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-textbox.min.js",
       "SourceId": "Syncfusion.Blazor.Inputs",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Inputs",
       "RelativePath": "scripts/sf-textbox.min.js",
       "AssetKind": "All",
@@ -413,13 +508,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-textbox.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-textbox.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-uploader.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-uploader.min.js",
       "SourceId": "Syncfusion.Blazor.Inputs",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Inputs",
       "RelativePath": "scripts/sf-uploader.min.js",
       "AssetKind": "All",
@@ -432,13 +527,279 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.38\\staticwebassets\\scripts\\sf-uploader.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.inputs\\25.1.39\\staticwebassets\\scripts\\sf-uploader.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.notifications\\25.1.38\\staticwebassets\\scripts\\sf-toast.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.lists\\25.1.39\\staticwebassets\\scripts\\sf-listview.min.js",
+      "SourceId": "Syncfusion.Blazor.Lists",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.lists\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Lists",
+      "RelativePath": "scripts/sf-listview.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.lists\\25.1.39\\staticwebassets\\scripts\\sf-listview.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\navigationsbase.min.js",
+      "SourceId": "Syncfusion.Blazor.Navigations",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Navigations",
+      "RelativePath": "scripts/navigationsbase.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\navigationsbase.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-accordion.min.js",
+      "SourceId": "Syncfusion.Blazor.Navigations",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Navigations",
+      "RelativePath": "scripts/sf-accordion.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-accordion.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-breadcrumb.min.js",
+      "SourceId": "Syncfusion.Blazor.Navigations",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Navigations",
+      "RelativePath": "scripts/sf-breadcrumb.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-breadcrumb.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-carousel.min.js",
+      "SourceId": "Syncfusion.Blazor.Navigations",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Navigations",
+      "RelativePath": "scripts/sf-carousel.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-carousel.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-contextmenu.min.js",
+      "SourceId": "Syncfusion.Blazor.Navigations",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Navigations",
+      "RelativePath": "scripts/sf-contextmenu.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-contextmenu.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-dropdowntree.min.js",
+      "SourceId": "Syncfusion.Blazor.Navigations",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Navigations",
+      "RelativePath": "scripts/sf-dropdowntree.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-dropdowntree.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-menu.min.js",
+      "SourceId": "Syncfusion.Blazor.Navigations",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Navigations",
+      "RelativePath": "scripts/sf-menu.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-menu.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-pager.min.js",
+      "SourceId": "Syncfusion.Blazor.Navigations",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Navigations",
+      "RelativePath": "scripts/sf-pager.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-pager.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-sidebar.min.js",
+      "SourceId": "Syncfusion.Blazor.Navigations",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Navigations",
+      "RelativePath": "scripts/sf-sidebar.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-sidebar.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-stepper.min.js",
+      "SourceId": "Syncfusion.Blazor.Navigations",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Navigations",
+      "RelativePath": "scripts/sf-stepper.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-stepper.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-tab.min.js",
+      "SourceId": "Syncfusion.Blazor.Navigations",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Navigations",
+      "RelativePath": "scripts/sf-tab.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-tab.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-toolbar.min.js",
+      "SourceId": "Syncfusion.Blazor.Navigations",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Navigations",
+      "RelativePath": "scripts/sf-toolbar.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-toolbar.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-treeview.min.js",
+      "SourceId": "Syncfusion.Blazor.Navigations",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\",
+      "BasePath": "_content/Syncfusion.Blazor.Navigations",
+      "RelativePath": "scripts/sf-treeview.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.navigations\\25.1.39\\staticwebassets\\scripts\\sf-treeview.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.notifications\\25.1.39\\staticwebassets\\scripts\\sf-toast.min.js",
       "SourceId": "Syncfusion.Blazor.Notifications",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.notifications\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.notifications\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Notifications",
       "RelativePath": "scripts/sf-toast.min.js",
       "AssetKind": "All",
@@ -451,13 +812,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.notifications\\25.1.38\\staticwebassets\\scripts\\sf-toast.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.notifications\\25.1.39\\staticwebassets\\scripts\\sf-toast.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\25.1.38\\staticwebassets\\scripts\\sf-dialog.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\25.1.39\\staticwebassets\\scripts\\sf-dialog.min.js",
       "SourceId": "Syncfusion.Blazor.Popups",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Popups",
       "RelativePath": "scripts/sf-dialog.min.js",
       "AssetKind": "All",
@@ -470,13 +831,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\25.1.38\\staticwebassets\\scripts\\sf-dialog.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\25.1.39\\staticwebassets\\scripts\\sf-dialog.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\25.1.38\\staticwebassets\\scripts\\sf-tooltip.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\25.1.39\\staticwebassets\\scripts\\sf-tooltip.min.js",
       "SourceId": "Syncfusion.Blazor.Popups",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Popups",
       "RelativePath": "scripts/sf-tooltip.min.js",
       "AssetKind": "All",
@@ -489,13 +850,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\25.1.38\\staticwebassets\\scripts\\sf-tooltip.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.popups\\25.1.39\\staticwebassets\\scripts\\sf-tooltip.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.spinner\\25.1.38\\staticwebassets\\scripts\\sf-spinner.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.spinner\\25.1.39\\staticwebassets\\scripts\\sf-spinner.min.js",
       "SourceId": "Syncfusion.Blazor.Spinner",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.spinner\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.spinner\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Spinner",
       "RelativePath": "scripts/sf-spinner.min.js",
       "AssetKind": "All",
@@ -508,13 +869,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.spinner\\25.1.38\\staticwebassets\\scripts\\sf-spinner.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.spinner\\25.1.39\\staticwebassets\\scripts\\sf-spinner.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.spinner\\25.1.38\\staticwebassets\\scripts\\spinner.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.spinner\\25.1.39\\staticwebassets\\scripts\\spinner.min.js",
       "SourceId": "Syncfusion.Blazor.Spinner",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.spinner\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.spinner\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Spinner",
       "RelativePath": "scripts/spinner.min.js",
       "AssetKind": "All",
@@ -527,13 +888,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.spinner\\25.1.38\\staticwebassets\\scripts\\spinner.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.spinner\\25.1.39\\staticwebassets\\scripts\\spinner.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\25.1.38\\staticwebassets\\scripts\\sf-drop-down-button.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\25.1.39\\staticwebassets\\scripts\\sf-drop-down-button.min.js",
       "SourceId": "Syncfusion.Blazor.SplitButtons",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.SplitButtons",
       "RelativePath": "scripts/sf-drop-down-button.min.js",
       "AssetKind": "All",
@@ -546,13 +907,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\25.1.38\\staticwebassets\\scripts\\sf-drop-down-button.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\25.1.39\\staticwebassets\\scripts\\sf-drop-down-button.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\25.1.38\\staticwebassets\\scripts\\splitbuttonsbase.min.js",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\25.1.39\\staticwebassets\\scripts\\splitbuttonsbase.min.js",
       "SourceId": "Syncfusion.Blazor.SplitButtons",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.SplitButtons",
       "RelativePath": "scripts/splitbuttonsbase.min.js",
       "AssetKind": "All",
@@ -565,13 +926,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\25.1.38\\staticwebassets\\scripts\\splitbuttonsbase.min.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.splitbuttons\\25.1.39\\staticwebassets\\scripts\\splitbuttonsbase.min.js"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\bootstrap.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\bootstrap.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "bootstrap.css",
       "AssetKind": "All",
@@ -584,13 +945,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\bootstrap.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\bootstrap4.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\bootstrap4.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "bootstrap4.css",
       "AssetKind": "All",
@@ -603,13 +964,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\bootstrap4.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\bootstrap4.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\bootstrap5.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\bootstrap5.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "bootstrap5.css",
       "AssetKind": "All",
@@ -622,13 +983,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\bootstrap5.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\bootstrap5.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\bootstrap5-dark.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\bootstrap5-dark.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "bootstrap5-dark.css",
       "AssetKind": "All",
@@ -641,13 +1002,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\bootstrap5-dark.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\bootstrap5-dark.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\bootstrap-dark.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\bootstrap-dark.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "bootstrap-dark.css",
       "AssetKind": "All",
@@ -660,13 +1021,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\bootstrap-dark.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\bootstrap-dark.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\customized\\material.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\customized\\material.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "customized/material.css",
       "AssetKind": "All",
@@ -679,13 +1040,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\customized\\material.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\customized\\material.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\customized\\material-dark.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\customized\\material-dark.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "customized/material-dark.css",
       "AssetKind": "All",
@@ -698,13 +1059,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\customized\\material-dark.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\customized\\material-dark.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\customized\\tailwind.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\customized\\tailwind.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "customized/tailwind.css",
       "AssetKind": "All",
@@ -717,13 +1078,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\customized\\tailwind.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\customized\\tailwind.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\customized\\tailwind-dark.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\customized\\tailwind-dark.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "customized/tailwind-dark.css",
       "AssetKind": "All",
@@ -736,13 +1097,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\customized\\tailwind-dark.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\customized\\tailwind-dark.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\fabric.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\fabric.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "fabric.css",
       "AssetKind": "All",
@@ -755,13 +1116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\fabric.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\fabric.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\fabric-dark.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\fabric-dark.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "fabric-dark.css",
       "AssetKind": "All",
@@ -774,13 +1135,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\fabric-dark.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\fabric-dark.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\fluent.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\fluent.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "fluent.css",
       "AssetKind": "All",
@@ -793,13 +1154,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\fluent.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\fluent.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\fluent-dark.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\fluent-dark.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "fluent-dark.css",
       "AssetKind": "All",
@@ -812,13 +1173,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\fluent-dark.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\fluent-dark.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\highcontrast.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\highcontrast.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "highcontrast.css",
       "AssetKind": "All",
@@ -831,13 +1192,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\highcontrast.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\highcontrast.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\material.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\material.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "material.css",
       "AssetKind": "All",
@@ -850,13 +1211,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\material.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\material.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\material3.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\material3.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "material3.css",
       "AssetKind": "All",
@@ -869,13 +1230,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\material3.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\material3.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\material3-dark.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\material3-dark.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "material3-dark.css",
       "AssetKind": "All",
@@ -888,13 +1249,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\material3-dark.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\material3-dark.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\material-dark.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\material-dark.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "material-dark.css",
       "AssetKind": "All",
@@ -907,13 +1268,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\material-dark.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\material-dark.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\tailwind.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\tailwind.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "tailwind.css",
       "AssetKind": "All",
@@ -926,13 +1287,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\tailwind.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\tailwind.css"
     },
     {
-      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\tailwind-dark.css",
+      "Identity": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\tailwind-dark.css",
       "SourceId": "Syncfusion.Blazor.Themes",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\",
       "BasePath": "_content/Syncfusion.Blazor.Themes",
       "RelativePath": "tailwind-dark.css",
       "AssetKind": "All",
@@ -945,7 +1306,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.38\\staticwebassets\\tailwind-dark.css"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\syncfusion.blazor.themes\\25.1.39\\staticwebassets\\tailwind-dark.css"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
@@ -983,7 +1344,7 @@
       "AssetTraitValue": "boot",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\8.0.3\\build\\net8.0\\blazor.webassembly.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\8.0.4\\build\\net8.0\\blazor.webassembly.js"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm",
@@ -1135,7 +1496,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\dotnet.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\dotnet.js"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
@@ -1154,15 +1515,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\dotnet.js.map"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\dotnet.js.map"
     },
     {
-      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.3.nu7mrjz430.js",
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.4.m19d9akdi6.js",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
       "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.3.nu7mrjz430.js",
+      "RelativePath": "_framework/dotnet.native.8.0.4.m19d9akdi6.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1173,7 +1534,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\dotnet.native.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\dotnet.native.js"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
@@ -1192,15 +1553,15 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\dotnet.native.wasm"
     },
     {
-      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.3.d2m9xqlexm.js",
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.4.k7o5ysdzjk.js",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
       "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.3.d2m9xqlexm.js",
+      "RelativePath": "_framework/dotnet.runtime.8.0.4.k7o5ysdzjk.js",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1211,7 +1572,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\dotnet.runtime.js"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
@@ -1230,7 +1591,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\dotnet.runtime.js.map"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
@@ -1249,7 +1610,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\icudt_CJK.dat"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
@@ -1268,7 +1629,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\icudt_EFIGS.dat"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
@@ -1287,7 +1648,7 @@
       "AssetTraitValue": "native",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.3\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+      "OriginalItemSpec": "C:\\Users\\raazc\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.4\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.wasm",
@@ -2031,6 +2392,25 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\webcil\\Syncfusion.Blazor.Buttons.wasm"
     },
     {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Calendars.wasm",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.Blazor.Calendars.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\webcil\\Syncfusion.Blazor.Calendars.wasm"
+    },
+    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Core.wasm",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -2088,6 +2468,25 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\webcil\\Syncfusion.Blazor.DropDowns.wasm"
     },
     {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Grids.wasm",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.Blazor.Grids.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\webcil\\Syncfusion.Blazor.Grids.wasm"
+    },
+    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Inputs.wasm",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -2105,6 +2504,44 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\webcil\\Syncfusion.Blazor.Inputs.wasm"
+    },
+    {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Lists.wasm",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.Blazor.Lists.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\webcil\\Syncfusion.Blazor.Lists.wasm"
+    },
+    {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Navigations.wasm",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.Blazor.Navigations.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\webcil\\Syncfusion.Blazor.Navigations.wasm"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Notifications.wasm",
@@ -2202,6 +2639,25 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\webcil\\Syncfusion.Blazor.Themes.wasm"
     },
     {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.ExcelExport.Net.wasm",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.ExcelExport.Net.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\webcil\\Syncfusion.ExcelExport.Net.wasm"
+    },
+    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Licensing.wasm",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -2219,6 +2675,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\webcil\\Syncfusion.Licensing.wasm"
+    },
+    {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.PdfExport.Net.wasm",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.PdfExport.Net.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\webcil\\Syncfusion.PdfExport.Net.wasm"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.AppContext.wasm",
@@ -5489,25 +5964,6 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.Requests.wasm"
     },
     {
-      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\1dlkq0xiep.gz",
-      "SourceId": "CRMS.Blazor",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/blazor.webassembly.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js"
-    },
-    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\1iklxmnpqr.gz",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -5603,25 +6059,6 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.Quic.wasm"
     },
     {
-      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\2p69a77l7h.gz",
-      "SourceId": "CRMS.Blazor",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
-    },
-    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\2pah7vt39y.gz",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -5639,25 +6076,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Resources.Reader.wasm"
-    },
-    {
-      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\2u1wm6a5at.gz",
-      "SourceId": "CRMS.Blazor",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\2zeit3kybg.gz",
@@ -5831,25 +6249,6 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Reflection.Emit.Lightweight.wasm"
     },
     {
-      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\4bmw4y0lbs.gz",
-      "SourceId": "CRMS.Blazor",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js"
-    },
-    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\4cp3rt50z9.gz",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -5962,25 +6361,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.Http.wasm"
-    },
-    {
-      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\59y1c7nj7i.gz",
-      "SourceId": "CRMS.Blazor",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.wasm.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\5ipbhzt86l.gz",
@@ -6154,6 +6534,25 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Private.DataContractSerialization.wasm"
     },
     {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\6nkf3nzd2v.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/blazor.webassembly.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js"
+    },
+    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\6pqbrqf9rv.gz",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -6268,6 +6667,25 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Runtime.Intrinsics.wasm"
     },
     {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\80ko3xblux.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.wasm"
+    },
+    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\80x3zuu0dt.gz",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -6344,6 +6762,25 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Dynamic.Runtime.wasm"
     },
     {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\8orrhkebwn.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.Blazor.Lists.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Lists.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Lists.wasm"
+    },
+    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\8yp1qo3lbb.gz",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -6418,6 +6855,63 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.Http.wasm"
+    },
+    {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\9ggs4itfla.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.ExcelExport.Net.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.ExcelExport.Net.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.ExcelExport.Net.wasm"
+    },
+    {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\9hury3ligm.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.Blazor.Navigations.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Navigations.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Navigations.wasm"
+    },
+    {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\9jnjbac9u2.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\9lukc294li.gz",
@@ -6589,44 +7083,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.ServicePoint.wasm"
-    },
-    {
-      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\agt8xx4p1w.gz",
-      "SourceId": "CRMS.Blazor",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.js.map.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map"
-    },
-    {
-      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\akh0ooieuj.gz",
-      "SourceId": "CRMS.Blazor",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_CJK.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\akuy4ide88.gz",
@@ -7009,25 +7465,6 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Linq.Queryable.wasm"
     },
     {
-      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\d2m9xqlexm.gz",
-      "SourceId": "CRMS.Blazor",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.runtime.8.0.3.d2m9xqlexm.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.3.d2m9xqlexm.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.3.d2m9xqlexm.js"
-    },
-    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\d3abcvjpp4.gz",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -7102,25 +7539,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.ComponentModel.TypeConverter.wasm"
-    },
-    {
-      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\efqfq99zf3.gz",
-      "SourceId": "CRMS.Blazor",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/icudt_EFIGS.dat.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_EFIGS.dat"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\epl5zbt8vn.gz",
@@ -7598,6 +8016,25 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.Abstractions.wasm"
     },
     {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\hwsp29bx25.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.map.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js.map"
+    },
+    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\i8s27s9q5g.gz",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -7826,6 +8263,25 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.Http.Json.wasm"
     },
     {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\jv5ckdyls0.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.Blazor.Grids.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Grids.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Grids.wasm"
+    },
+    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\jxggf1ye4x.gz",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -7862,6 +8318,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Blazored.LocalStorage.wasm"
+    },
+    {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\k7o5ysdzjk.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.runtime.8.0.4.k7o5ysdzjk.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.4.k7o5ysdzjk.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.8.0.4.k7o5ysdzjk.js"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\kb8t9udzi5.gz",
@@ -8111,6 +8586,25 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.DropDowns.wasm"
     },
     {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\m19d9akdi6.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.native.8.0.4.m19d9akdi6.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.4.m19d9akdi6.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.4.m19d9akdi6.js"
+    },
+    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\m5dz7br0u4.gz",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -8280,25 +8774,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Collections.wasm"
-    },
-    {
-      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\nu7mrjz430.gz",
-      "SourceId": "CRMS.Blazor",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/dotnet.native.8.0.3.nu7mrjz430.js.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.3.nu7mrjz430.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.native.8.0.3.nu7mrjz430.js"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\o0a1z67ejy.gz",
@@ -8510,6 +8985,25 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.wasm"
     },
     {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\pcaygbfkw2.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.js.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js"
+    },
+    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\prn7be80x0.gz",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -8584,6 +9078,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.IO.FileSystem.DriveInfo.wasm"
+    },
+    {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\q74v1mp0i5.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.PdfExport.Net.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.PdfExport.Net.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.PdfExport.Net.wasm"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\q7sa60lfji.gz",
@@ -8793,6 +9306,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Security.Principal.wasm"
+    },
+    {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\s9mdymtdgf.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_CJK.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_CJK.dat"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\sa2e68g9cq.gz",
@@ -9517,6 +10049,25 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Xml.Linq.wasm"
     },
     {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\y1dxkke7dx.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/dotnet.runtime.js.map.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.runtime.js.map"
+    },
+    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\y2i2nfmuar.gz",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -9593,6 +10144,25 @@
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.ComponentModel.Primitives.wasm"
     },
     {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\yefkf8fdpp.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Syncfusion.Blazor.Calendars.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Calendars.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Syncfusion.Blazor.Calendars.wasm"
+    },
+    {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\yo43u0emu0.gz",
       "SourceId": "CRMS.Blazor",
       "SourceType": "Computed",
@@ -9648,6 +10218,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.IO.UnmanagedMemoryStream.wasm"
+    },
+    {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\z4o563yfuv.gz",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/icudt_no_CJK.dat.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\bin\\Debug\\net8.0\\wwwroot\\_framework\\icudt_no_CJK.dat"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\obj\\Debug\\net8.0\\compressed\\zaxjnnqatt.gz",

@@ -1,0 +1,68 @@
+﻿@implements IDisposable
+@if (allState.ShowComplaint)
+{
+    if (ShowMainPage)
+    {
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-outline-success" @onclick="ShowAddOrUpdateComplaintButtonClicked">
+                                <i class="bi bi-plus-circle-dotted"></i></button></div>
+                        <div class="card-body">
+                            <SfGrid DataSource="@Complaints">
+                                <GridColumns>
+                                    <GridColumn HeaderText ="Complaint Image">
+                                        <Template>
+                                            @{
+                                                var complaint = (context as Complaint);
+                                                <div class="image">
+                                                    <img src="@complaint!.Photo" alt="@complaint.Name" width="150" height="150" />
+                                                </div>
+                                            }
+                                        </Template>
+                                    </GridColumn>
+                                    <GridColumn Field=@nameof(Complaint.CustomerNumber) HeaderText="Customer ID"></GridColumn>
+                                    <GridColumn Field=@nameof(Complaint.FeedbackComments) HeaderText="Feedback Comments"></GridColumn>
+                                    <GridColumn Field=@nameof(Complaint.ComplaintName) HeaderText="Complaint Name"></GridColumn>
+                                    <GridColumn Field=@nameof(Complaint.CustomerTelephoneNumber) HeaderText="Customer Number"></GridColumn>
+                                    <GridColumn Field=@nameof(Complaint.Branch.Name) HeaderText="Branch"></GridColumn>
+                                    <GridColumn Field=@nameof(Complaint.Town.Name) HeaderText="Town"></GridColumn>
+                                </GridColumns>
+                            </SfGrid>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }   
+}
+
+<AddOrUpdateComplaintPage ShowAddOrUpdateComplaint="ShowAddOrUpdatePage" />
+@code {
+    public List<Complaint> Complaints { get; set; } = new();
+
+    protected async override Task OnInitializedAsync()
+    {
+        allState.Action += StateHasChanged;
+        await LoadComplaints();
+    }
+
+    private async Task LoadComplaints()
+    {
+        Complaints = await complaintService.GetAll(Constants.ComplaintBaseUrl);
+    }
+
+    public bool ShowMainPage { get; set; } = true;
+    public bool ShowAddOrUpdatePage { get; set; } = false;
+    void ShowAddOrUpdateComplaintButtonClicked()
+    {
+        ShowMainPage = false;
+        ShowAddOrUpdatePage = true;
+    }
+
+    public void Dispose() => allState.Action -= StateHasChanged;
+}
