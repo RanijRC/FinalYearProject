@@ -8,7 +8,7 @@
                 <div class="col-lg-1 text-center">
                     <i class="bi bi-x-lg fs-3 fw-bold text-danger" style="cursor:pointer" @onclick="Closeform"></i>
                 </div>
-                <div class="col-lg-6 text-center"><h2>Add Complaint</h2></div>
+                <div class="col-lg-6 text-center"><h2>@Title Complaint</h2></div>
             </div>
 
             <div class="row">
@@ -46,8 +46,8 @@
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label class="form-label">Complaint Name</label>
-                                            <InputText @bind-Value="ComplaintGroup1.Name" class="form-control" />
-                                            <ValidationMessage For="() => ComplaintGroup1.Name" class="text-danger" />
+                                            <InputText @bind-Value="ComplaintGroup1.ComplaintName" class="form-control" />
+                                            <ValidationMessage For="() => ComplaintGroup1.ComplaintName" class="text-danger" />
                                         </div>
                                         <div class="form-group mt-2">
                                             <label class="form-label">Telephone</label>
@@ -58,6 +58,9 @@
                                             <label class="form-label">Complaint Type</label>
                                             <InputText @bind-Value="ComplaintGroup1.ComplaintType" class="form-control" />
                                             <ValidationMessage For="() => ComplaintGroup1.ComplaintType" class="text-danger" />
+                                        </div>
+                                        <div class="form-control mt-2">
+                                            <img src="@ComplaintGroup1.Photo" width="100" height="100" />
                                         </div>
                                     </div>
                                 </div>
@@ -74,8 +77,15 @@
                                             <InputText @bind-Value="ComplaintGroup1.FeedbackComments" class="form-control" />
                                             <ValidationMessage For="() => ComplaintGroup1.FeedbackComments" class="text-danger" />
                                         </div>
+                                        <div class="form-group mt-2">
+                                            <label class="form-label @(ImageUploadMessage == ""?"":"text-danger")">
+                                                @(ImageUploadMessage == "" ? "Upload Image" : ImageUploadMessage)
+                                            </label>
+                                            <InputFile class="form-control" OnChange="UploadImage"></InputFile> 
+                                            <ValidationMessage For="() => ComplaintGroup1.Photo" class="text-danger" />
+                                        </div>
                                         <div class="form-group mt-5">
-                                            <button class="btn btn-primary float-end mt-4 mb-5" type="submit">
+                                            <button class="btn btn-primary float-end mt-4 mb-5" type="button" @onclick="ShowLayer2">
                                                 <i class="bi bi-arrow-right"></i>
                                                 Next
                                             </button>
@@ -102,18 +112,22 @@
                                             <ValidationMessage For="() => ComplaintGroup2.ComplaintIssue" class="text-danger" />
                                         </div>
                                         <div class="form-group mt-3">
-                                            <label class="form-label"></label>
-                                            @*<label class="form-label">@(GeneralDepartmentName == "" ? "Select General Department" : $"Selected General Department: {GeneralDepartmentName}")</label>*@
-                                            <SfDropDownList TValue="string" TItem="GeneralDepartment" Placeholder="Select General Department" DataSource="GeneralDepartments">
+                                            @{
+                                                string generalDepartment = GeneralDepartment.Equals("") ? "Select General Department" : GeneralDepartment;
+                                            }
+                                            <label class="form-label">Select General Department</label>
+                                            <SfDropDownList TValue="string" TItem="GeneralDepartment" Placeholder="@generalDepartment" DataSource="GeneralDepartments">
                                                 <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
                                                 <DropDownListEvents TValue="string" TItem="GeneralDepartment" ValueChange="OnGeneralDepartmentValueChange"></DropDownListEvents>
                                             </SfDropDownList>
 
                                         </div>
                                         <div class="form-group mt-3">
-                                            <label class="form-label"></label>
-                                            @*<label class="form-label">@(FacultyName == "" ? "Select Faculty" : $"Selected Faculty: {FacultyName}")</label>*@
-                                            <SfDropDownList TValue="string" TItem="Faculty" Placeholder="Select Faculty" DataSource="Faculties">
+                                            @{
+                                                string faculty = Faculty.Equals("") ? "Select Faculty" : Faculty;
+                                            }
+                                            <label class="form-label">Select Faculty</label>
+                                            <SfDropDownList TValue="string" TItem="Faculty" Placeholder="@faculty" DataSource="Faculties">
                                                 <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
                                                 <DropDownListEvents TValue="string" TItem="Faculty" ValueChange="OnFacultyValueChange"></DropDownListEvents>
                                             </SfDropDownList>
@@ -242,6 +256,15 @@
     public bool FirstLayer {get;set;} = true;
     public bool SecondLayer {get;set;} = false;
 
+    public string Title { get; set; } = "Add";
+    public string GeneralDepartment { get; set; } = "";
+    public string Faculty { get; set; } = "";
+    public string Branch { get; set; } = "";
+    public string Country { get; set; } = "";
+    public string City { get; set; } = "";
+    public string Town { get; set; } = "";
+
+
     private void ShowLayer2()
     {
         FirstLayer = false;
@@ -254,10 +277,93 @@
         SecondLayer = false;
     }
 
+
     protected override void OnInitialized()
     {
         allState.Action += StateHasChanged;
     }
+
+    //File Upload
+    string ImageUploadMessage = "";
+    private async Task UploadImage(InputFileChangeEventArgs e)
+    {
+        if (e.File.Name.ToLower().Contains(".png"))
+        {
+            var format = "image/png";
+            var resizeImage = await e.File.RequestImageFileAsync(format, 300, 300);
+            var buffer = new byte[resizeImage.Size];
+            await resizeImage.OpenReadStream().ReadAsync(buffer);
+            var imageData = $"data:{format}.base64,{Convert.ToBase64String(buffer)}";
+            ImageUploadMessage = "";
+            ComplaintGroup1.Photo = imageData;
+            imageData = "";
+            return;
+        }
+        ImageUploadMessage = "PNG file needed.";
+        return;
+    }
+
+
+
+    //Forms Validation
+    //Form 1
+    private bool ValidateComplaintGroup1()
+    {
+        if (string.IsNullOrEmpty(ComplaintGroup1.ComplaintName)
+        || string.IsNullOrEmpty(ComplaintGroup1.CustomerTelephoneNumber)
+        || string.IsNullOrEmpty(ComplaintGroup1.CustomerNumber)
+        || string.IsNullOrEmpty(ComplaintGroup1.ComplaintType)
+        || string.IsNullOrEmpty(ComplaintGroup1.Photo)
+        || string.IsNullOrEmpty(ComplaintGroup1.FeedbackComments))
+            return false;
+        else
+            return true;
+    }
+
+    //Form 2
+    private bool ValidateComplaintGroup2()
+    {
+        if(string.IsNullOrEmpty(ComplaintGroup2.ComplaintIssue)
+        || ComplaintGroup2.TownId == 0
+        || ComplaintGroup2.BranchId == 0)
+            return false;
+        else
+            return true;
+    }
+
+    //Save forms
+    [Parameter] public EventCallback<Complaint> HandleSaveComplaintClickedEvent { get; set; }
+    private void Form1()
+    {
+        var IsValid = ValidateComplaintGroup1();
+        if (IsValid)
+        {
+            Complaint.Name = ComplaintGroup1.ComplaintName;
+            Complaint.CustomerTelephoneNumber = ComplaintGroup1.CustomerTelephoneNumber;
+            Complaint.CustomerNumber = ComplaintGroup1.CustomerNumber;
+            Complaint.FeedbackComments = ComplaintGroup1.FeedbackComments;
+            Complaint.Photo = ComplaintGroup1.Photo;
+            ShowLayer2();
+        }
+    }
+
+    private async Task Form2()
+    {
+        var IsValid = ValidateComplaintGroup2();
+        if (IsValid)
+        {
+            Complaint.ComplaintName = ComplaintGroup2.ComplaintIssue;
+            Complaint.Other = ComplaintGroup2.Other;
+            Complaint.BranchId = ComplaintGroup2.BranchId;
+            Complaint.TownId = ComplaintGroup2.TownId;
+
+            await HandleSaveComplaintClickedEvent.InvokeAsync(Complaint);
+            ComplaintGroup1 = new();
+            ComplaintGroup2 = new();
+            Complaint = new();
+        }
+    }
+
     //Form closed
     [Parameter] public EventCallback NotifyParentFormCloseClicked { get; set; }
     async Task Closeform()
@@ -300,17 +406,6 @@
     public void OnBranchValueChange(ChangeEventArgs<string, Branch> args)
     {
         ComplaintGroup2.BranchId = int.Parse(args.Value);
-    }
-
-    //Forms Handling / 1& 2
-    void Form1()
-    {
-
-    }
-
-    void Form2()
-    {
-        
     }
 
     public void Dispose() => allState.Action -= StateHasChanged;

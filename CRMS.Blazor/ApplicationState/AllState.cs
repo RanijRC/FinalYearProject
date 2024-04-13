@@ -70,7 +70,7 @@
         }
 
         //Complaint
-        public bool ShowComplaint { get; set; }
+        public bool ShowComplaint { get; set; } = true;
         public void ComplaintClicked()
         {
             ResetAllDepartments();
