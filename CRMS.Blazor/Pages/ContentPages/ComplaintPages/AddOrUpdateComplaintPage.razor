@@ -85,7 +85,7 @@
                                             <ValidationMessage For="() => ComplaintGroup1.Photo" class="text-danger" />
                                         </div>
                                         <div class="form-group mt-5">
-                                            <button class="btn btn-primary float-end mt-4 mb-5" type="button" @onclick="ShowLayer2">
+                                            <button class="btn btn-primary float-end mt-4 mb-5" type="submit">
                                                 <i class="bi bi-arrow-right"></i>
                                                 Next
                                             </button>
@@ -134,9 +134,11 @@
 
                                         </div>
                                         <div class="form-group mt-3">
-                                            <label class="form-label"></label>
-                                            @*<label class="form-label">@(Complaint.Branch == null ? "Select Branch" : $"Selected Branch: {Complaint.Branch.Name}")</label>*@
-                                            <SfDropDownList TValue="string" TItem="Branch" Placeholder="Select Branch" DataSource="Branches">
+                                            <label class="form-label">Select Branch</label>
+                                            @{
+                                                string branch = Branch.Equals("") ? "Select Branch" : Branch;
+                                            }
+                                            <SfDropDownList TValue="string" TItem="Branch" Placeholder="@branch" DataSource="Branches">
                                                 <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
                                                 <DropDownListEvents TValue="string" TItem="Branch" ValueChange="OnBranchValueChange"></DropDownListEvents>
                                             </SfDropDownList>
@@ -154,23 +156,32 @@
                                     <div class="card-title mb-5 fw-bold" style="font-family:Tahoma">Location Information</div>
                                     <div class="card-body">
                                         <div class="form-group">
-                                            @*<label class="form-label">@(CountryName == "" ? "Select Country" : $"Selected Country : {CountryName}")</label>*@
-                                            <SfDropDownList TValue="string" TItem="Country" Placeholder="Select Country" DataSource="Countries">
+                                            <label class="form-label">Select Country</label>
+                                            @{
+                                                string country = Country.Equals("") ? "Select Country" : Country;
+                                            }
+                                            <SfDropDownList TValue="string" TItem="Country" Placeholder="@country" DataSource="Countries">
                                                 <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
                                                 <DropDownListEvents TValue="string" TItem="Country" ValueChange="OnCountryValueChange"></DropDownListEvents>
                                             </SfDropDownList>
                                         </div>
                                         <div class="form-group mt-3">
-                                            @*<label class="form-label">@(CityName == "" ? "Select City" : $"Selected Town : {CityName}")</label>*@
-                                            <SfDropDownList TValue="string" TItem="City" Placeholder="Select City" DataSource="Cities">
+                                            <label class="form-label">Select City</label>
+                                            @{
+                                                string city = City.Equals("") ? "Select City" : City;
+                                            }
+                                            <SfDropDownList TValue="string" TItem="City" Placeholder="@city" DataSource="Cities">
                                                 <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
                                                 <DropDownListEvents TValue="string" TItem="City" ValueChange="OnCityValueChange"></DropDownListEvents>
                                             </SfDropDownList>
                                             <ValidationMessage For="() => ComplaintGroup2.TownId" class="text-danger" />
                                         </div>
                                         <div class="form-group mt-3">
-                                            @*<label class="form-label">@(Complaint.Town == null ? "Select Town" : $"Selected Town : {Complaint.Town.Name}")</label>*@
-                                            <SfDropDownList TValue="string" TItem="Town" Placeholder="Select Town" DataSource="Towns">
+                                            <label class="form-label">Select Town</label>
+                                            @{
+                                                string town = Town.Equals("") ? "Select Town" : Town;
+                                            }
+                                            <SfDropDownList TValue="string" TItem="Town" Placeholder="@town" DataSource="Towns">
                                                 <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
                                                 <DropDownListEvents TValue="string" TItem="Town" ValueChange="OnTownValueChange"></DropDownListEvents>
                                             </SfDropDownList>
@@ -338,7 +349,7 @@
         var IsValid = ValidateComplaintGroup1();
         if (IsValid)
         {
-            Complaint.Name = ComplaintGroup1.ComplaintName;
+            Complaint.ComplaintName = ComplaintGroup1.ComplaintName;
             Complaint.CustomerTelephoneNumber = ComplaintGroup1.CustomerTelephoneNumber;
             Complaint.CustomerNumber = ComplaintGroup1.CustomerNumber;
             Complaint.FeedbackComments = ComplaintGroup1.FeedbackComments;
@@ -352,15 +363,12 @@
         var IsValid = ValidateComplaintGroup2();
         if (IsValid)
         {
-            Complaint.ComplaintName = ComplaintGroup2.ComplaintIssue;
+            Complaint.ComplaintIssue = ComplaintGroup2.ComplaintIssue;
             Complaint.Other = ComplaintGroup2.Other;
             Complaint.BranchId = ComplaintGroup2.BranchId;
             Complaint.TownId = ComplaintGroup2.TownId;
 
             await HandleSaveComplaintClickedEvent.InvokeAsync(Complaint);
-            ComplaintGroup1 = new();
-            ComplaintGroup2 = new();
-            Complaint = new();
         }
     }
 
@@ -370,6 +378,15 @@
     {
         ShowAddOrUpdateComplaint = false;
         await NotifyParentFormCloseClicked.InvokeAsync();
+    }
+
+    //Clear content
+    public void ClearContent()
+    {
+        Complaint = new();
+        ComplaintGroup1 = new();
+        ComplaintGroup2 = new();
+        StateHasChanged();
     }
 
     //Country //City //Town

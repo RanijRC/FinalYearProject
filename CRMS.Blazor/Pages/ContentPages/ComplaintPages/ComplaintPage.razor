@@ -29,6 +29,14 @@
                                     <GridColumn Field=@nameof(Complaint.CustomerTelephoneNumber) HeaderText="Customer Number"></GridColumn>
                                     <GridColumn Field=@nameof(Complaint.Branch.Name) HeaderText="Branch"></GridColumn>
                                     <GridColumn Field=@nameof(Complaint.Town.Name) HeaderText="Town"></GridColumn>
+                                    <GridColumn HeaderText="Menu" HeaderTextAlign="TextAlign.Left">
+                                        <Template>
+                                            @{
+                                                var complaint = (context as Complaint);
+                                                <i class="bi bi-menu-down text-primary" id="cursorStyle" @onclick="() => ShowMenuPopUp(complaint!)"></i>
+                                            }
+                                        </Template>
+                                    </GridColumn>
                                 </GridColumns>
                             </SfGrid>
                         </div>
@@ -41,19 +49,214 @@
     }   
 }
 
-<AddOrUpdateComplaintPage ShowAddOrUpdateComplaint="ShowAddOrUpdatePage" />
+<AddOrUpdateComplaintPage @ref="addOrUpdateComplaint" 
+                          Complaint="Complaint"
+                          ShowAddOrUpdateComplaint = "ShowAddOrUpdatePage"
+                          NotifyParentFormCloseClicked="NotifyParentFormCloseClicked"
+                          Countries="DefaultCountries"
+                          Cities="SelectedCities"
+                          Towns="SelectedTowns"
+                          GeneralDepartments="DefaultGeneralDepartments"
+                          Faculties="SelectedFaculties"
+                          Branches="SelectedBranches"
+                          HandleCountrySelectedEvent="HandleCountrySelectedEvent"
+                          HandleCitySelectedEvent="HandleCitySelectedEvent"
+                          HandleGeneralDepartmentSelectedEvent="HandleGeneralDepartmentSelectedEvent"
+                          HandleFacultySelectedEvent="HandleFacultySelectedEvent"
+                          HandleSaveComplaintClickedEvent="HandleSaveComplaintClickedEvent">
+</AddOrUpdateComplaintPage>
+
+<ComplaintDetailsPage ComplaintDetails="Complaint"
+                        ShowDetailsPage="ShowDetailsPage"
+                        HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked"/>
+
+@* <ContextMenu @ref="contextMenu"
+             HandleEditClicked="EditClicked"
+             HandleViewClicked="ViewClicked"
+             HandleDeleteClicked="DeleteClicked"
+             HandleAddCompletedClicked="AddCompleteClicked"
+             HandleAddFeedbackClicked="AddFeedbackClicked"
+             HandleAddPendingClicked="AddPendingClicked" /> *@
+
+
 @code {
-    public List<Complaint> Complaints { get; set; } = new();
+    AddOrUpdateComplaintPage? addOrUpdateComplaint;
+    public List<Complaint> Complaints { get; set; } = [];
+    public Complaint Complaint { get; set; } = new();
+
+    //Country / City /Town
+    public List<Country> DefaultCountries { get; set; } = [];
+    public List<City> DefaultCities { get; set; } = [];
+    public List<Town> DefaultTowns { get; set; } = [];
+
+    //GeneralDepartment / Faculty / Branch
+    public List<GeneralDepartment> DefaultGeneralDepartments { get; set; } = [];
+    public List<Faculty> DefaultFaculties { get; set; } = [];
+    public List<Branch> DefaultBranches { get; set; } = [];
+
+    public List<Faculty> SelectedFaculties { get; set; } = [];
+    public List<Branch> SelectedBranches { get; set; } = [];
+    public List<City> SelectedCities { get; set; } = [];
+    public List<Town> SelectedTowns { get; set; } = [];
 
     protected async override Task OnInitializedAsync()
     {
         allState.Action += StateHasChanged;
         await LoadComplaints();
+        await LoadDefaults();
+    }
+
+    private async Task LoadDefaults()
+    {
+        DefaultCountries = await countryService.GetAll(Constants.CountryBaseUrl);
+        DefaultCities = await cityService.GetAll(Constants.CityBaseUrl);
+        DefaultTowns = await townService.GetAll(Constants.TownBaseUrl);
+
+        DefaultGeneralDepartments = await generalDepartmentService.GetAll(Constants.GeneralDepartmentBaseUrl);
+        DefaultFaculties = await facultyService.GetAll(Constants.FacultyBaseUrl);
+        DefaultBranches = await branchService.GetAll(Constants.BranchBaseUrl);
+    }
+
+    //country select
+    private void HandleCountrySelectedEvent(int countryId) =>
+    SelectedCities = DefaultCities.Where(c => c.CountryId == countryId).ToList();
+
+    //city select
+    private void HandleCitySelectedEvent(int cityId) =>
+    SelectedTowns = DefaultTowns.Where(t => t.CityId == cityId).ToList();
+
+    //General deparmtent select
+    void HandleGeneralDepartmentSelectedEvent(int generaldeparmentId) =>
+    SelectedFaculties = DefaultFaculties.Where(gd => gd.GeneralDepartmentId == generaldeparmentId).ToList();
+
+    //Faculty select
+    void HandleFacultySelectedEvent(int facultyId) =>
+    SelectedBranches = DefaultBranches.Where(f => f.FacultyId == facultyId).ToList();
+
+    //Notify parent when Add or update complaint form closes
+    private async Task NotifyParentFormCloseClicked()
+    {
+        ShowMainPage = true;
+        ShowAddOrUpdatePage = false;
+        await LoadComplaints();
+        SelectedComplaint = new();
     }
 
     private async Task LoadComplaints()
     {
         Complaints = await complaintService.GetAll(Constants.ComplaintBaseUrl);
+    }
+
+    //Save complaints
+    async Task HandleSaveComplaintClickedEvent(Complaint complaint)
+    {
+        bool successCheck = false;
+        if(complaint.Id > 0)
+        {
+            var result = await complaintService.Update(complaint, Constants.ComplaintBaseUrl);
+            successCheck = await DisplayMessage(result.flag, result.Message);
+        }
+        else
+        {
+            var response = await complaintService.Insert(complaint, Constants.ComplaintBaseUrl);
+            successCheck = await DisplayMessage(response.flag, response.Message);
+        }
+        if (successCheck)
+            addOrUpdateComplaint!.ClearContent();
+    }
+
+    //Context menu
+    //Show Menu Pop up
+    ContextMenu? contextMenu;   
+    public Complaint SelectedComplaint { get; set; } = new();
+    void ShowMenuPopUp(Complaint complaint)
+    {
+        SelectedComplaint = complaint;
+        contextMenu!.OpenContextMenu();
+    }
+
+    //Edit Clicked
+    void EditClicked()
+    {
+        //ComplaintGrouping1
+        addOrUpdateComplaint!.Complaint.Id = SelectedComplaint.Id;
+        addOrUpdateComplaint!.ComplaintGroup1.ComplaintName = SelectedComplaint.Name;
+        addOrUpdateComplaint!.ComplaintGroup1.CustomerTelephoneNumber = SelectedComplaint.CustomerTelephoneNumber;
+        addOrUpdateComplaint!.ComplaintGroup1.CustomerNumber = SelectedComplaint.CustomerNumber;
+        addOrUpdateComplaint!.ComplaintGroup1.FeedbackComments = SelectedComplaint.FeedbackComments;
+        addOrUpdateComplaint!.ComplaintGroup1.ComplaintType = SelectedComplaint.ComplaintType;
+        addOrUpdateComplaint!.ComplaintGroup1.Photo = SelectedComplaint.Photo;
+
+        //ComplaintGrouping2
+        addOrUpdateComplaint!.ComplaintGroup2.ComplaintIssue = SelectedComplaint.ComplaintIssue;
+        addOrUpdateComplaint!.ComplaintGroup2.Other = SelectedComplaint.Other;
+
+        //General Department / Faculty / Branch
+        addOrUpdateComplaint!.GeneralDepartment = SelectedComplaint.Branch!.Faculty!.GeneralDepartment!.Name;
+        addOrUpdateComplaint!.Faculty = SelectedComplaint.Branch!.Faculty!.Name;
+        addOrUpdateComplaint!.Branch = SelectedComplaint.Branch!.Name;
+
+        //Country / City /Town
+        addOrUpdateComplaint!.Country = SelectedComplaint.Town!.City!.Country!.Name;
+        addOrUpdateComplaint!.City = SelectedComplaint.Town!.City!.Name;
+        addOrUpdateComplaint!.Town = SelectedComplaint.Town!.Name;
+
+        //Title
+        addOrUpdateComplaint.Title = "Update";
+        SelectedComplaint = new();
+        contextMenu!.CloseContextMenu();
+        ShowAddOrUpdatePage = true;
+        ShowMainPage = false;
+    }
+
+    //Delete Clicked
+    private async Task DeleteClicked()
+    {
+        contextMenu!.CloseContextMenu();
+        bool confirm = await dialogService.ConfirmAsync($"Are you sure you want to delete {SelectedComplaint.ComplaintName}?", "Confirm Delete");
+        if (!confirm) return;
+
+        var response = await branchService.DeleteById(SelectedComplaint.Id, Constants.ComplaintBaseUrl);
+        var result = await DisplayMessage(response.flag, response.Message);
+        if (result)
+        {
+            SelectedComplaint = new();
+            await LoadComplaints();
+        }
+    }
+
+    //ViewClicked
+    public bool ShowDetailsPage { get; set; } = false;
+    private void ViewClicked()
+    {
+        Complaint = SelectedComplaint;
+        contextMenu!.CloseContextMenu();
+        ShowDetailsPage = true;
+        ShowMainPage = false;
+        SelectedComplaint = new();
+    }
+
+
+    //Details complaint close btn clicked
+    void HandleDetailsPageCloseBtnClicked()
+    {
+        ShowDetailsPage = false;
+        ShowMainPage = true;
+    }
+
+    //Display Message
+    private async Task<bool> DisplayMessage(bool flag, string message)
+    {
+        if (flag)
+        {
+            await dialogService.AlertAsync(message, "Success Operator");
+            return true;
+        }
+        else
+        {
+            await dialogService.AlertAsync(message, "Alert!");
+            return false;
+        }
     }
 
     public bool ShowMainPage { get; set; } = true;

@@ -10,6 +10,7 @@ namespace CRMS.Domain.Entities
         [Required]
         public string? ComplaintName { get; set; } = string.Empty;
         [Required]
+        public string? ComplaintIssue { get; set; } = string.Empty;
         public string? ComplaintType { get; set; } = string.Empty;
         [Required, DataType(DataType.PhoneNumber)]
         public string? CustomerTelephoneNumber { get; set; } = string.Empty;
