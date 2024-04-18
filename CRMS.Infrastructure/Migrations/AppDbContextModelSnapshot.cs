@@ -103,10 +103,6 @@ namespace CRMS.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ComplaintName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("ComplaintType")
                         .HasColumnType("nvarchar(max)");
 
@@ -145,6 +141,50 @@ namespace CRMS.Infrastructure.Migrations
                     b.ToTable("Complaints");
                 });
 
+            modelBuilder.Entity("CRMS.Domain.Entities.ComplaintComplete", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ComplaintCompleteTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ComplaintId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumberOfDays")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ComplaintCompleteTypeId");
+
+                    b.ToTable("ComplaintCompletes");
+                });
+
+            modelBuilder.Entity("CRMS.Domain.Entities.ComplaintCompleteType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ComplaintCompleteTypes");
+                });
+
             modelBuilder.Entity("CRMS.Domain.Entities.Country", b =>
                 {
                     b.Property<int>("Id")
@@ -176,20 +216,34 @@ namespace CRMS.Infrastructure.Migrations
                     b.Property<DateTime>("ComplaintDateStart")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("ComplaintNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ComplaintId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("CustomerId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("DataPendingTypeId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Other")
+                    b.HasKey("Id");
+
+                    b.HasIndex("DataPendingTypeId");
+
+                    b.ToTable("DataPendings");
+                });
+
+            modelBuilder.Entity("CRMS.Domain.Entities.DataPendingType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("DataPendings");
+                    b.ToTable("DataPendingTypes");
                 });
 
             modelBuilder.Entity("CRMS.Domain.Entities.Faculty", b =>
@@ -212,6 +266,33 @@ namespace CRMS.Infrastructure.Migrations
                     b.HasIndex("GeneralDepartmentId");
 
                     b.ToTable("Faculties");
+                });
+
+            modelBuilder.Entity("CRMS.Domain.Entities.Feedback", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ComplaintFeedback")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ComplaintId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("FeedbackRecomendation")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Feedbacks");
                 });
 
             modelBuilder.Entity("CRMS.Domain.Entities.GeneralDepartment", b =>
@@ -348,6 +429,28 @@ namespace CRMS.Infrastructure.Migrations
                     b.Navigation("Town");
                 });
 
+            modelBuilder.Entity("CRMS.Domain.Entities.ComplaintComplete", b =>
+                {
+                    b.HasOne("CRMS.Domain.Entities.ComplaintCompleteType", "ComplaintCompleteType")
+                        .WithMany("ComplaintCompletes")
+                        .HasForeignKey("ComplaintCompleteTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ComplaintCompleteType");
+                });
+
+            modelBuilder.Entity("CRMS.Domain.Entities.DataPending", b =>
+                {
+                    b.HasOne("CRMS.Domain.Entities.DataPendingType", "DataPendingType")
+                        .WithMany("DataPendings")
+                        .HasForeignKey("DataPendingTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("DataPendingType");
+                });
+
             modelBuilder.Entity("CRMS.Domain.Entities.Faculty", b =>
                 {
                     b.HasOne("CRMS.Domain.Entities.GeneralDepartment", "GeneralDepartment")
@@ -380,9 +483,19 @@ namespace CRMS.Infrastructure.Migrations
                     b.Navigation("Towns");
                 });
 
+            modelBuilder.Entity("CRMS.Domain.Entities.ComplaintCompleteType", b =>
+                {
+                    b.Navigation("ComplaintCompletes");
+                });
+
             modelBuilder.Entity("CRMS.Domain.Entities.Country", b =>
                 {
                     b.Navigation("Cities");
+                });
+
+            modelBuilder.Entity("CRMS.Domain.Entities.DataPendingType", b =>
+                {
+                    b.Navigation("DataPendings");
                 });
 
             modelBuilder.Entity("CRMS.Domain.Entities.Faculty", b =>

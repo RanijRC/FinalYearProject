@@ -3,6 +3,7 @@
 @using CRMS.Application.Services.Contracts
 @using CRMS.Blazor.ApplicationState
 @using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Routing
 @using Microsoft.AspNetCore.Components.Web
@@ -24,6 +25,9 @@
 @using CRMS.Blazor.Pages.ContentPages.LocationPages
 @using CRMS.Blazor.Pages.ContentPages.UserPages
 @using CRMS.Blazor.Pages.ContentPages.ComplaintPages
+@using CRMS.Blazor.Pages.ContentPages.FeedbackPages
+@using CRMS.Blazor.Pages.ContentPages.DataPendingPages
+@using CRMS.Blazor.Pages.ContentPages.ComplaintCompletePages
 
 
 @inject NavigationManager NavManager
@@ -50,3 +54,10 @@
 
 @*//Complaint*@
 @inject IGenericServiceInterface<Complaint> complaintService
+
+@*//Feedback / Complaint complete / data pending*@
+@inject IGenericServiceInterface<Feedback> feedbackService
+@inject IGenericServiceInterface<DataPending> datapendingService
+@inject IGenericServiceInterface<DataPendingType> pendingtypeService
+@inject IGenericServiceInterface<ComplaintComplete> complaintcompleteService
+@inject IGenericServiceInterface<ComplaintCompleteType> completetypeService

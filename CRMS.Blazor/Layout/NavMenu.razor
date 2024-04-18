@@ -1,24 +1,19 @@
-﻿@page "/nav"
+﻿@attribute [Authorize]
+<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/home/dashboard">
+            <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span>Home
+        </a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
 
-<AuthorizeView>
-    <Authorized>
-        <div class="top-row ps-3 navbar navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="">
-                    Welcome,@context.User.Identity!.Name
-                </a>
-                <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </div>
-        <div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-            <nav class="flex-column">
-                <div class="nav-item px-3">
-                    <NavLink class="nav-link p-2" href="/home/dashboard">
-                        <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span>Home
-                    </NavLink>
-                </div>
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <AuthorizeView Roles="Admin">
+            <Authorized>    
                 <div class="nav-item px-3">
                     <NavLink class="nav-link p-2" @onclick="ShowAdminMenuContainer" style="cursor:pointer;" href="javascript:void()">
                         <div class="hstack gap-1">
@@ -33,10 +28,14 @@
                         </div>
                     </a>
                 </div>
+            </Authorized>
+        </AuthorizeView>
+        <AuthorizeView>
+            <Authorized>
                 <div class="nav-item px-3" style="margin-top:@DepartmentMargin">
                     <NavLink class="nav-link p-2" @onclick="ShowDepartmentContainer" style="cursor:pointer;" href="javascript:void()">
                         <div class="hstack gap-1">
-                            <span class="bi bi-backpack4-fill fs-3 text-center" aria-hidden="true" style="margin-top:-2rem"></span>
+                            <span class="bi bi-backpack4-fill fs-3 text-center" aria-hidden="true" style="margin-top:-3rem"></span>
                             <span>Management</span>
                         </div>
                     </NavLink>
@@ -69,7 +68,7 @@
                             <li style="list-style:none">
                                 <hr />
                             </li>
-                            <li style="list-style:none" >
+                            <li style="list-style:none">
                                 <a class="nav-link p-2 cursorStyle" @onclick="CountryClicked">
                                     <div class="hstack">
                                         <span class="bi bi-geo-alt fs-5 text-center" aria-hidden="true" style="margin-top:-2rem"></span>
@@ -97,6 +96,30 @@
                                 <hr />
                             </li>
                             <li style="list-style:none">
+                                <a class="nav-link p-2 cursorStyle" @onclick="DataPendingClicked">
+                                    <div class="hstack">
+                                        <span class="bi bi-geo fs-5 text-center" aria-hidden="true" style="margin-top:-2rem"></span>
+                                        <span>Town</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="list-style:none">
+                                <a class="nav-link p-2 cursorStyle" @onclick="ComplaintCompleteClicked">
+                                    <div class="hstack">
+                                        <span class="bi bi-geo fs-5 text-center" aria-hidden="true" style="margin-top:-2rem"></span>
+                                        <span>Town</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="list-style:none">
+                                <a class="nav-link p-2 cursorStyle" @onclick="FeedbackClicked">
+                                    <div class="hstack">
+                                        <span class="bi bi-geo fs-5 text-center" aria-hidden="true" style="margin-top:-2rem"></span>
+                                        <span>Town</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="list-style:none">
                                 <a class="nav-link p-2 cursorStyle" @onclick="ComplaintClicked">
                                     <div class="hstack">
                                         <span class="bi bi-geo fs-5 text-center" aria-hidden="true" style="margin-top:-2rem"></span>
@@ -107,10 +130,10 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </div>
-    </Authorized>
-</AuthorizeView>
+            </Authorized>
+        </AuthorizeView>
+    </nav>
+</div>
 
 <style>
     .cursorStyle{
@@ -170,6 +193,13 @@
     void CityClicked() => allState.CityClicked();
 
     void TownClicked() => allState.TownClicked();
+
+    //DataPending / Feedback / ComplaintComplete
+    void DataPendingClicked() => allState.DataPendingClicked();
+
+    void FeedbackClicked() => allState.FeedbackClicked();
+
+    void ComplaintCompleteClicked() => allState.ComplaintCompleteClicked();
 
     //User
     void UserClicked() => allState.UserClicked();

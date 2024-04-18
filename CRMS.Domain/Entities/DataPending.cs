@@ -16,6 +16,8 @@ namespace CRMS.Domain.Entities
         public DateTime ComplaintDateEnd { get; set; }
         public int NumberofDays => (ComplaintDateEnd - ComplaintDateStart).Days;
 
-        
+        public DataPendingType? DataPendingType { get; set; }
+        [Required]
+        public int DataPendingTypeId { get; set; }
     }
 }

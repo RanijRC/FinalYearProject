@@ -26,5 +26,11 @@ namespace CRMS.Infrastructure.Data
 
         //Other / Pending
         public DbSet<DataPending> DataPendings { get; set;}
+        public DbSet<DataPendingType> DataPendingTypes { get; set;}
+
+        public DbSet<Feedback> Feedbacks { get; set;}
+
+        public DbSet<ComplaintComplete> ComplaintCompletes { get;set;}
+        public DbSet<ComplaintCompleteType> ComplaintCompleteTypes { get;set;}
     }
 }

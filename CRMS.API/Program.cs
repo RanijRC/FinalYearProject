@@ -64,7 +64,11 @@ builder.Services.AddScoped<IGenericRepositoryInterface<Country>, CountryReposito
 builder.Services.AddScoped<IGenericRepositoryInterface<City>, CityRepository>();
 builder.Services.AddScoped<IGenericRepositoryInterface<Town>, TownRepository>();
 builder.Services.AddScoped<IGenericRepositoryInterface<Complaint>, ComplaintRepository>();
-
+builder.Services.AddScoped<IGenericRepositoryInterface<Feedback>, FeedbackRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<ComplaintComplete>, ComplaintCompleteRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<ComplaintCompleteType>, ComplaintCompleteTypeRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<DataPending>, DataPendingRepository>();
+builder.Services.AddScoped<IGenericRepositoryInterface<DataPendingType>, DataPendingTypeRepository>();
 
 
 var app = builder.Build();

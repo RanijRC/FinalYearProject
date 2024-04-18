@@ -1,29 +1,61 @@
 ﻿<div class = "container-fluid">
     <div class="row">
         <div class="col-lg-2 cursorStyle">
-            <div class="card border-primary">
-                <div class="card-header"><i class="bi bi-people text-primary"></i>Customers</div>
+            <div class="card border-success">
+                <div class="card-header"><i class="bi bi-backpack3 text-success"></i>Complaints
+                    <span class="badge bg-info fs-6">@Complaints.Count</span>
+                </div>
             </div>
         </div>
         <div class="col-lg-2 cursorStyle">
             <div class="card border-success">
-                <div class="card-header"><i class="bi bi-backpack3 text-success"></i>Complaints</div>
+                <div class="card-header"><i class="bi bi-backpack3 text-success"></i>Faculties
+                    <span class="badge bg-info fs-6">@Faculties.Count</span>
+                </div>
             </div>
         </div>
         <div class="col-lg-2 cursorStyle">
-            <div class="card border-danger">
-                <div class="card-header"><i class="bi bi-stopwatch text-danger"></i>Pending</div>
+            <div class="card border-danger" @onclick="DataPendingClicked">
+                <div class="card-header"><i class="bi bi-stopwatch text-danger"></i>Pending
+                    <span class="badge bg-info fs-6">@DataPendings.Count</span>
+                </div>
             </div>
         </div>
-        <div class="col-lg-2 cursorStyle">
+        <div class="col-lg-2 cursorStyle" @onclick="FeedbackClicked">
             <div class="card border-warning">
-                <div class="card-header"><i class="bi bi-backpack3 text-success"></i>Feedback</div>
+                <div class="card-header"><i class="bi bi-backpack3 text-success"></i>Feedback
+                    <span class="badge bg-info fs-6">@Feedbacks.Count</span>
+                </div>
             </div>
         </div>
-        <div class="col-lg-2 cursorStyle">
+        <div class="col-lg-2 cursorStyle" @onclick="ComplaintCompleteClicked">
             <div class="card border-dark">
-                <div class="card-header"><i class="bi bi-slack text-dark"></i>Completed</div>
+                <div class="card-header"><i class="bi bi-slack text-dark"></i>Completed
+                    <span class="badge bg-info fs-6">@ComplaintCompletes.Count</span>
+                </div>
             </div>
         </div>
     </div>
 </div>
+@code{
+    public List<Complaint> Complaints {get;set;} = new();
+    public List<Faculty> Faculties{get;set;} = new();
+    public List<DataPending> DataPendings {get;set;} = new();
+    public List<Feedback> Feedbacks{get;set;} = new();
+    public List<ComplaintComplete> ComplaintCompletes{get;set;} = new();
+
+    async Task LoadDefaults()
+    {
+        Complaints = await complaintService.GetAll(Constants.ComplaintBaseUrl);
+        Faculties = await facultyService.GetAll(Constants.FacultyBaseUrl);
+        DataPendings = await datapendingService.GetAll(Constants.DataPendingBaseUrl);
+        Feedbacks = await feedbackService.GetAll(Constants.FeedbackBaseUrl);
+        ComplaintCompletes = await complaintcompleteService.GetAll(Constants.ComplaintCompleteBaseUrl);
+    }
+
+    void FeedbackClicked() => allState.FeedbackClicked();
+    void DataPendingClicked() => allState.DataPendingClicked();
+    void ComplaintCompleteClicked() => allState.ComplaintCompleteClicked();
+
+    public void Dispose() => allState.Action -= StateHasChanged;
+}

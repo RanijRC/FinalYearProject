@@ -14,6 +14,7 @@ using Syncfusion.Blazor.Popups;
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MzIyNTM0NkAzMjM1MmUzMDJlMzBpTFI2MVRrbitsYVA1b0FZZlF6WW4yQmZlbHdna3Z4R2FKa2JsRVhMYU5zPQ==");
 
 builder.Services.AddTransient<CustomHttpHandler>();
 builder.Services.AddHttpClient("SystemApiClient", client =>
@@ -40,6 +41,14 @@ builder.Services.AddScoped<IGenericServiceInterface<Town>, GenericServiceImpleme
 
 //Complaint
 builder.Services.AddScoped<IGenericServiceInterface<Complaint>, GenericServiceImplementation<Complaint>>();
+
+//Feedback / Data Pending /Complaint Complete
+builder.Services.AddScoped<IGenericServiceInterface<Feedback>, GenericServiceImplementation<Feedback>>();
+builder.Services.AddScoped<IGenericServiceInterface<DataPending>, GenericServiceImplementation<DataPending>>();
+builder.Services.AddScoped<IGenericServiceInterface<DataPendingType>, GenericServiceImplementation<DataPendingType>>();
+builder.Services.AddScoped<IGenericServiceInterface<ComplaintComplete>, GenericServiceImplementation<ComplaintComplete>>();
+builder.Services.AddScoped<IGenericServiceInterface<ComplaintCompleteType>, GenericServiceImplementation<ComplaintCompleteType>>();
+
 
 builder.Services.AddScoped<AllState>();
 

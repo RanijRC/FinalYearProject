@@ -1,0 +1,82 @@
+﻿<SfDialog Width="280px" IsModal="true" ShowCloseIcon="true" @bind-Visible="IsVisible">
+    <DialogEvents OnOpen="OpenDialog"></DialogEvents>
+    <DialogTemplates>
+        <Header>@Title Complaint Completion</Header>
+        <Content>
+            <EditForm Model="ItemModel" Enhance OnSubmit="Save">
+                <div class="card border-success">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label class="form-label">Complaint Id</label>
+                            <input @bind="ItemModel.ComplaintId" class="form-control" disabled />
+                        </div>
+                        <div class="form-group mt-2">
+                            <label class="form-label">Start Date</label>
+                            <InputDate @bind-Value="ItemModel.StartDate" class="form-control" />
+                        </div>
+                        <div class="form-group mt-2">
+                            <label class="form-label">Expected End Date</label>
+                            <input value="@ItemModel.EndDate.Date" class="form-control" />
+                        </div>
+                        <div class="form-group mt-2">
+                            <label class="form-label">Number of Days</label>
+                            <input value="@ItemModel.NumberOfDays" class="form-control" disabled />
+                        </div>
+                        <div class="form-group mt-3 mb-3">
+                            <label class="form-label">Select Type</label>
+                            @if(ItemModel.ComplaintCompleteType != null)
+                            {
+                                string selected = ItemModel.ComplaintCompleteType!.Name!;
+                                <SfDropDownList TValue="string" TItem="ComplaintCompleteType" Placeholder="@selected" DataSource="ComplaintCompleteTypes">
+                                    <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
+                                    <DropDownListEvents TValue="string" TItem="ComplaintCompleteType" ValueChange="OnValueChange"></DropDownListEvents>
+                                </SfDropDownList>
+                            }
+                            else
+                            {
+                                <SfDropDownList TValue="string" TItem="ComplaintCompleteType" Placeholder="Select Type" DataSource="ComplaintCompleteTypes">
+                                    <DropDownListFieldSettings Value="Id" Text="Name"></DropDownListFieldSettings>
+                                    <DropDownListEvents TValue="string" TItem="ComplaintCompleteType" ValueChange="OnValueChange"></DropDownListEvents>
+                                </SfDropDownList>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </EditForm>
+        </Content>
+    </DialogTemplates>
+</SfDialog>
+
+@code{
+   [Parameter] public ComplaintComplete ItemModel {get;set;} = new();
+   [Parameter] public List<ComplaintCompleteType> ComplaintCompleteTypes {get;set;} = new();
+   [Parameter] public EventCallback<ComplaintComplete> HandleSaveOperationEvent {get;set;}
+    public string Title { get; set; } = "Add";
+    public bool IsVisible { get; set; } = false;
+    public async void Save()
+    {
+        if (ItemModel.ComplaintCompleteTypeId <= 0)
+            await dialogService.AlertAsync("You need to proviide Type.", "Alert");
+        else
+            await HandleSaveOperationEvent.InvokeAsync(ItemModel);
+    }
+
+    public void OpenDialog()
+    {
+        IsVisible = true;
+        StateHasChanged();
+    }
+
+    public void CloseDialog()
+    {
+        IsVisible = false;
+        StateHasChanged();
+    }
+
+    public void OnValueChange(ChangeEventArgs<string, ComplaintCompleteType> args)
+    {
+        ItemModel.ComplaintCompleteTypeId = int.Parse(args.Value.ToString());
+    }
+
+    public void ChangeTitle(string title) => Title = title;
+}

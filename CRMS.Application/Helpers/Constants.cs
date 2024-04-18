@@ -15,5 +15,12 @@ namespace CRMS.Application.Helpers
         public const string CityBaseUrl = "api/city";
         public const string ComplaintBaseUrl = "api/complaint";
         public const string TownBaseUrl = "api/town";
+
+        public const string FeedbackBaseUrl = "api/feedback";
+        public const string DataPendingBaseUrl = "api/datapending";
+        public const string DataPendingTypeBaseUrl = "api/datapendingtype";
+        public const string ComplaintCompleteBaseUrl = "api/complaintcomplete";
+        public const string ComplaintCompleteTypeBaseUrl = "api/complaintcompletetype";
+
     }
 }

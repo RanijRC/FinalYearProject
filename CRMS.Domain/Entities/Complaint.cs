@@ -7,8 +7,7 @@ namespace CRMS.Domain.Entities
     {
         [Required]
         public string? CustomerNumber { get; set; } = string.Empty;
-        [Required]
-        public string? ComplaintName { get; set; } = string.Empty;
+        
         [Required]
         public string? ComplaintIssue { get; set; } = string.Empty;
         public string? ComplaintType { get; set; } = string.Empty;
@@ -26,5 +25,6 @@ namespace CRMS.Domain.Entities
 
         public Town? Town { get; set; }
         public int TownId { get; set; } 
+
     }
 }

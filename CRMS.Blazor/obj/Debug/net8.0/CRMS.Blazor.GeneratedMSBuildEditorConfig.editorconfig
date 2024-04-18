@@ -38,6 +38,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFBhZ2VzXFJlZ2lzdGVyUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/ComplaintCompletePages/ComplaintCompleteDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXENvbXBsYWludENvbXBsZXRlUGFnZXNcQ29tcGxhaW50Q29tcGxldGVEaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/ComplaintCompletePages/ComplaintCompletePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXENvbXBsYWludENvbXBsZXRlUGFnZXNcQ29tcGxhaW50Q29tcGxldGVQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/ComplaintCompletePages/ComplaintCompleteTypeDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXENvbXBsYWludENvbXBsZXRlUGFnZXNcQ29tcGxhaW50Q29tcGxldGVUeXBlRGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/ComplaintCompletePages/ComplaintCompleteTypePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXENvbXBsYWludENvbXBsZXRlUGFnZXNcQ29tcGxhaW50Q29tcGxldGVUeXBlUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/ComplaintPages/AddOrUpdateComplaintPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXENvbXBsYWludFBhZ2VzXEFkZE9yVXBkYXRlQ29tcGxhaW50UGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,6 +64,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/ComplaintPages/ComplaintPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXENvbXBsYWludFBhZ2VzXENvbXBsYWludFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/DataPendingPages/DataPendingDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERhdGFQZW5kaW5nUGFnZXNcRGF0YVBlbmRpbmdEaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/DataPendingPages/DataPendingPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERhdGFQZW5kaW5nUGFnZXNcRGF0YVBlbmRpbmdQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/DataPendingPages/DataPendingTypeDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERhdGFQZW5kaW5nUGFnZXNcRGF0YVBlbmRpbmdUeXBlRGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/DataPendingPages/DataPendingTypePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXERhdGFQZW5kaW5nUGFnZXNcRGF0YVBlbmRpbmdUeXBlUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/FacultyPages/BranchDialog.razor]
@@ -72,6 +104,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/FacultyPages/GeneralDepartmentPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEZhY3VsdHlQYWdlc1xHZW5lcmFsRGVwYXJ0bWVudFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/FeedbackPages/FeedbackDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEZlZWRiYWNrUGFnZXNcRmVlZGJhY2tEaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/FeedbackPages/FeedbackPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEZlZWRiYWNrUGFnZXNcRmVlZGJhY2tQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/School Files/Year Files/Year 3/Semester 2/Application Development/repo/CRMSFinalProject/CRMS.Blazor/Pages/ContentPages/HomePage.razor]

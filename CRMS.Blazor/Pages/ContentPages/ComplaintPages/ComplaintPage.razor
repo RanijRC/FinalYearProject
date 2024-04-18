@@ -11,7 +11,11 @@
                             <button class="btn btn-outline-success" @onclick="ShowAddOrUpdateComplaintButtonClicked">
                                 <i class="bi bi-plus-circle-dotted"></i></button></div>
                         <div class="card-body">
-                            <SfGrid DataSource="@Complaints">
+                            @{
+                                var Tool = (new List<string>() { "Search", "ExcelExport", "PdfExport", "Print" });
+                            }
+                            <SfGrid DataSource="@Complaints" AllowPaging="true" AllowSorting="true"
+                                    Toolbar="@Tool" AllowExcelExport="true" @ref="DefaultGrid" AllowPdfExport="true">
                                 <GridColumns>
                                     <GridColumn HeaderText ="Complaint Image">
                                         <Template>
@@ -25,7 +29,7 @@
                                     </GridColumn>
                                     <GridColumn Field=@nameof(Complaint.CustomerNumber) HeaderText="Customer ID"></GridColumn>
                                     <GridColumn Field=@nameof(Complaint.FeedbackComments) HeaderText="Feedback Comments"></GridColumn>
-                                    <GridColumn Field=@nameof(Complaint.ComplaintName) HeaderText="Complaint Name"></GridColumn>
+                                    <GridColumn Field=@nameof(Complaint.Name) HeaderText="Complaint Name"></GridColumn>
                                     <GridColumn Field=@nameof(Complaint.CustomerTelephoneNumber) HeaderText="Customer Number"></GridColumn>
                                     <GridColumn Field=@nameof(Complaint.Branch.Name) HeaderText="Branch"></GridColumn>
                                     <GridColumn Field=@nameof(Complaint.Town.Name) HeaderText="Town"></GridColumn>
@@ -70,16 +74,24 @@
                         ShowDetailsPage="ShowDetailsPage"
                         HandleDetailsPageCloseBtnClicked="HandleDetailsPageCloseBtnClicked"/>
 
-@* <ContextMenu @ref="contextMenu"
+<ContextMenu @ref="contextMenu"
              HandleEditClicked="EditClicked"
              HandleViewClicked="ViewClicked"
              HandleDeleteClicked="DeleteClicked"
              HandleAddCompletedClicked="AddCompleteClicked"
              HandleAddFeedbackClicked="AddFeedbackClicked"
-             HandleAddPendingClicked="AddPendingClicked" /> *@
+             HandleAddPendingClicked="AddPendingClicked" />
 
+<DataPendingDialog @ref="pendingDialog" 
+    ItemModel="DataPending" DataPendingTypes="DataPendingTypes" HandleSaveOperationEvent="SavePendingEvent" />
+
+<FeedbackDialog @ref="feedbackDialog" Feedback="Feedback" HandleSaveOperationEvent="SaveCommentEvent"/>
+
+<ComplaintCompleteDialog @ref = "complaintCompleteDialog"
+    ItemModel="ComplaintComplete" ComplaintCompleteTypes="ComplaintCompleteTypes" HandleSaveOperationEvent="SaveCompleteEvent"/>
 
 @code {
+    private SfGrid<Complaint>? DefaultGrid;
     AddOrUpdateComplaintPage? addOrUpdateComplaint;
     public List<Complaint> Complaints { get; set; } = [];
     public Complaint Complaint { get; set; } = new();
@@ -104,6 +116,8 @@
         allState.Action += StateHasChanged;
         await LoadComplaints();
         await LoadDefaults();
+        await GetDataPendingTypes();
+        await GetComplainCompleteTypes();
     }
 
     private async Task LoadDefaults()
@@ -180,7 +194,7 @@
     {
         //ComplaintGrouping1
         addOrUpdateComplaint!.Complaint.Id = SelectedComplaint.Id;
-        addOrUpdateComplaint!.ComplaintGroup1.ComplaintName = SelectedComplaint.Name;
+        addOrUpdateComplaint!.ComplaintGroup1.Name = SelectedComplaint.Name;
         addOrUpdateComplaint!.ComplaintGroup1.CustomerTelephoneNumber = SelectedComplaint.CustomerTelephoneNumber;
         addOrUpdateComplaint!.ComplaintGroup1.CustomerNumber = SelectedComplaint.CustomerNumber;
         addOrUpdateComplaint!.ComplaintGroup1.FeedbackComments = SelectedComplaint.FeedbackComments;
@@ -213,7 +227,7 @@
     private async Task DeleteClicked()
     {
         contextMenu!.CloseContextMenu();
-        bool confirm = await dialogService.ConfirmAsync($"Are you sure you want to delete {SelectedComplaint.ComplaintName}?", "Confirm Delete");
+        bool confirm = await dialogService.ConfirmAsync($"Are you sure you want to delete {SelectedComplaint.Name}?", "Confirm Delete");
         if (!confirm) return;
 
         var response = await branchService.DeleteById(SelectedComplaint.Id, Constants.ComplaintBaseUrl);
@@ -236,6 +250,82 @@
         SelectedComplaint = new();
     }
 
+    private async Task GetDataPendingTypes() => DataPendingTypes = await pendingtypeService.GetAll(Constants.DataPendingTypeBaseUrl);
+    private async Task GetComplainCompleteTypes() => ComplaintCompleteTypes = await completetypeService.GetAll(Constants.ComplaintCompleteTypeBaseUrl);
+
+    //Add Feedback Clicked
+    FeedbackDialog? feedbackDialog;
+    Feedback Feedback = new();
+    private void AddFeedbackClicked()
+    {
+        Feedback.ComplaintId = SelectedComplaint.Id;
+        contextMenu!.CloseContextMenu();
+        feedbackDialog!.OpenDialog();
+    }
+
+    //Save Feedback Hanlder
+    async Task SaveCommentEvent(Feedback item)
+    {
+        item.ComplaintId = SelectedComplaint.Id;
+        var (flag, message) = await feedbackService.Insert(item, Constants.FeedbackBaseUrl);
+        var response = await DisplayMessage(flag,message);
+        if (response)
+        {
+            SelectedComplaint = new();
+            Feedback = new();
+            feedbackDialog!.CloseDialog();
+        }
+    }
+
+    //Add Pending Clicked
+    DataPendingDialog? pendingDialog;
+    DataPending DataPending = new();
+    List<DataPendingType> DataPendingTypes = [];
+    private void AddPendingClicked()
+    {
+        DataPending.ComplaintId = SelectedComplaint.Id;
+        contextMenu!.CloseContextMenu();
+        pendingDialog!.OpenDialog();
+    }
+
+    //Save Pending Handler
+    async Task SavePendingEvent(DataPending item)
+    {
+        item.ComplaintId = SelectedComplaint.Id;
+        var (flag, message) = await datapendingService.Insert(item, Constants.DataPendingBaseUrl);
+        var response = await DisplayMessage(flag, message);
+        if (response)
+        {
+            SelectedComplaint = new();
+            DataPending = new();
+            pendingDialog!.CloseDialog();
+        }
+    }
+
+    //Add ComplaintComplete Clicked
+    ComplaintCompleteDialog? complaintCompleteDialog;
+    ComplaintComplete ComplaintComplete = new();
+    List<ComplaintCompleteType> ComplaintCompleteTypes = [];
+    private void AddCompleteClicked()
+    {
+        ComplaintComplete.ComplaintId = SelectedComplaint.Id;
+        contextMenu!.CloseContextMenu();
+        complaintCompleteDialog!.OpenDialog();
+    }
+
+    //Save Complete CLicked
+    async Task SaveCompleteEvent(ComplaintComplete item)
+    {
+        item.ComplaintId = SelectedComplaint.Id;
+        var (flag, message) = await complaintcompleteService.Insert(item, Constants.ComplaintCompleteBaseUrl);
+        var response = await DisplayMessage(flag, message);
+        if (response)
+        {
+            SelectedComplaint = new();
+            ComplaintComplete = new();
+            complaintCompleteDialog!.CloseDialog();
+        }
+    }
 
     //Details complaint close btn clicked
     void HandleDetailsPageCloseBtnClicked()
@@ -257,6 +347,16 @@
             await dialogService.AlertAsync(message, "Alert!");
             return false;
         }
+    }
+
+    //Excel export / PDF Export
+    public async Task ToolbarClickHanlder(Syncfusion.Blazor.Navigations.ClickEventArgs args)
+    {
+        if (args.Item.Text == "Excel Export")
+            await this.DefaultGrid!.ExcelExport()!;
+
+        if (args.Item.Text == "PDF Export")
+            await this.DefaultGrid!.PdfExport()!;
     }
 
     public bool ShowMainPage { get; set; } = true;

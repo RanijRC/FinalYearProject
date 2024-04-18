@@ -10,7 +10,7 @@ namespace CRMS.Application.DTOs
     public class ComplaintGrouping1
     {
         [Required]
-        public string ComplaintName { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
         [Required] 
         public string ComplaintType { get; set; } = string.Empty;
         [Required]
