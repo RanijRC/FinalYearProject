@@ -56,13 +56,14 @@ namespace CRMS.Infrastructure.Repositories.Implementation
             findComplaint.Name = item.Name;
             findComplaint.Other = item.Other;
             findComplaint.CustomerTelephoneNumber = item.CustomerTelephoneNumber;
+            findComplaint.ComplaintType = item.ComplaintType;
+            findComplaint.ComplaintIssue = item.ComplaintIssue;
             findComplaint.BranchId = item.BranchId;
             findComplaint.TownId = item.TownId;
             findComplaint.CustomerNumber = item.CustomerNumber;
             findComplaint.FeedbackComments = item.FeedbackComments;
             findComplaint.Photo = item.Photo;
 
-            appDbContext.Complaints.Update(item);
             await appDbContext.SaveChangesAsync();
             await Commit();
             return Success();

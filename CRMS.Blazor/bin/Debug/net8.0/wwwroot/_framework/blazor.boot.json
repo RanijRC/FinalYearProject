@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "CRMS.Blazor",
   "resources": {
-    "hash": "sha256-z4N8UeLuSZDCPedy/fKLkjSlrYAVY4s/i4ZjxjOatYk=",
+    "hash": "sha256-T0e/U34mXz5ePffx4V4adn8nvUFkc3+Osu2qqQ3Grd4=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.m19d9akdi6.js": "sha256-ju0+XWE0ihz554eKEj0HQ8Opa61xpbUIaX5/MNo8we4="
     },
@@ -238,12 +238,12 @@
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
       "CRMS.Application.wasm": "sha256-pKGEEem/BIqW2X48c9EnUvNRI68huMoOgPNVb3JS6Y4=",
       "CRMS.Domain.wasm": "sha256-tlZ4PbxwANqRqeAzxVdzPdz9y/7u9frc+DjsMSRq5bA=",
-      "CRMS.Blazor.wasm": "sha256-FXiGWvcZLQlbA+bq2HJ2bZq4BJBxXbRi/MV3U2+hfJg="
+      "CRMS.Blazor.wasm": "sha256-FmaPlvBku04b4WvSwW4AUeT3Tn54S2IlnjmPstIcDZQ="
     },
     "pdb": {
       "CRMS.Application.pdb": "sha256-3Z9iyYCpb/a6VSVFAnS8cJzZAW/euv2pAfMZeR/RJAQ=",
       "CRMS.Domain.pdb": "sha256-9/3la53gL4KikiTtcWNvfDZpk1sSzhN/qi1pG0p5ZcU=",
-      "CRMS.Blazor.pdb": "sha256-C4mVUMLlGIZr1GmzAl7WkQp6WyY5W7LnQTzdl1XIyTw="
+      "CRMS.Blazor.pdb": "sha256-rqZhF9goAxByTly6rshX4beR0X630EQfx+FkwvQnx/8="
     }
   },
   "cacheBootResources": true,

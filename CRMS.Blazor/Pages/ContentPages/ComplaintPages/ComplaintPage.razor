@@ -16,6 +16,8 @@
                             }
                             <SfGrid DataSource="@Complaints" AllowPaging="true" AllowSorting="true"
                                     Toolbar="@Tool" AllowExcelExport="true" @ref="DefaultGrid" AllowPdfExport="true">
+                                <GridPageSettings PageSize="5"></GridPageSettings>
+                                <GridEvents OnToolbarClick="ToolbarClickHanlder" TValue="Complaint"></GridEvents>
                                 <GridColumns>
                                     <GridColumn HeaderText ="Complaint Image">
                                         <Template>
@@ -28,11 +30,13 @@
                                         </Template>
                                     </GridColumn>
                                     <GridColumn Field=@nameof(Complaint.CustomerNumber) HeaderText="Customer ID"></GridColumn>
+                                    <GridColumn Field=@nameof(Complaint.ComplaintIssue) HeaderText="Complaint Issue"></GridColumn>
+                                    <GridColumn Field=@nameof(Complaint.ComplaintType) HeaderText="Complaint Type"></GridColumn>
                                     <GridColumn Field=@nameof(Complaint.FeedbackComments) HeaderText="Feedback Comments"></GridColumn>
                                     <GridColumn Field=@nameof(Complaint.Name) HeaderText="Complaint Name"></GridColumn>
                                     <GridColumn Field=@nameof(Complaint.CustomerTelephoneNumber) HeaderText="Customer Number"></GridColumn>
                                     <GridColumn Field=@nameof(Complaint.Branch.Name) HeaderText="Branch"></GridColumn>
-                                    <GridColumn Field=@nameof(Complaint.Town.Name) HeaderText="Town"></GridColumn>
+                                    <GridColumn Field=@nameof(Complaint.Town.Name) HeaderText="Town"></GridColumn> 
                                     <GridColumn HeaderText="Menu" HeaderTextAlign="TextAlign.Left">
                                         <Template>
                                             @{
@@ -194,26 +198,26 @@
     {
         //ComplaintGrouping1
         addOrUpdateComplaint!.Complaint.Id = SelectedComplaint.Id;
-        addOrUpdateComplaint!.ComplaintGroup1.Name = SelectedComplaint.Name;
-        addOrUpdateComplaint!.ComplaintGroup1.CustomerTelephoneNumber = SelectedComplaint.CustomerTelephoneNumber;
-        addOrUpdateComplaint!.ComplaintGroup1.CustomerNumber = SelectedComplaint.CustomerNumber;
-        addOrUpdateComplaint!.ComplaintGroup1.FeedbackComments = SelectedComplaint.FeedbackComments;
-        addOrUpdateComplaint!.ComplaintGroup1.ComplaintType = SelectedComplaint.ComplaintType;
-        addOrUpdateComplaint!.ComplaintGroup1.Photo = SelectedComplaint.Photo;
+        addOrUpdateComplaint!.ComplaintGroup1.Name = SelectedComplaint.Name!;
+        addOrUpdateComplaint!.ComplaintGroup1.CustomerTelephoneNumber = SelectedComplaint.CustomerTelephoneNumber!;
+        addOrUpdateComplaint!.ComplaintGroup1.CustomerNumber = SelectedComplaint.CustomerNumber!;
+        addOrUpdateComplaint!.ComplaintGroup1.FeedbackComments = SelectedComplaint.FeedbackComments!;
+        addOrUpdateComplaint!.ComplaintGroup1.ComplaintType = SelectedComplaint.ComplaintType!;
+        addOrUpdateComplaint!.ComplaintGroup1.Photo = SelectedComplaint.Photo!;
 
         //ComplaintGrouping2
         addOrUpdateComplaint!.ComplaintGroup2.ComplaintIssue = SelectedComplaint.ComplaintIssue;
         addOrUpdateComplaint!.ComplaintGroup2.Other = SelectedComplaint.Other;
 
         //General Department / Faculty / Branch
-        addOrUpdateComplaint!.GeneralDepartment = SelectedComplaint.Branch!.Faculty!.GeneralDepartment!.Name;
-        addOrUpdateComplaint!.Faculty = SelectedComplaint.Branch!.Faculty!.Name;
-        addOrUpdateComplaint!.Branch = SelectedComplaint.Branch!.Name;
+        addOrUpdateComplaint!.GeneralDepartment = SelectedComplaint.Branch!.Faculty!.GeneralDepartment!.Name!;
+        addOrUpdateComplaint!.Faculty = SelectedComplaint.Branch!.Faculty!.Name!;
+        addOrUpdateComplaint!.Branch = SelectedComplaint.Branch!.Name!;
 
         //Country / City /Town
-        addOrUpdateComplaint!.Country = SelectedComplaint.Town!.City!.Country!.Name;
-        addOrUpdateComplaint!.City = SelectedComplaint.Town!.City!.Name;
-        addOrUpdateComplaint!.Town = SelectedComplaint.Town!.Name;
+        addOrUpdateComplaint!.Country = SelectedComplaint.Town!.City!.Country!.Name!;
+        addOrUpdateComplaint!.City = SelectedComplaint.Town!.City!.Name!;
+        addOrUpdateComplaint!.Town = SelectedComplaint.Town!.Name!;
 
         //Title
         addOrUpdateComplaint.Title = "Update";

@@ -78,10 +78,10 @@
                                             <ValidationMessage For="() => ComplaintGroup1.FeedbackComments" class="text-danger" />
                                         </div>
                                         <div class="form-group mt-2">
-                                            <label class="form-label @(ImageUploadMessage == ""?"":"text-danger")">
+                                            <label class="form-label @(ImageUploadMessage == "" ? "" : "text-danger")">
                                                 @(ImageUploadMessage == "" ? "Upload Image" : ImageUploadMessage)
                                             </label>
-                                            <InputFile class="form-control" OnChange="UploadImage"></InputFile> 
+                                            <InputFile class="form-control" OnChange="UploadImage"></InputFile>
                                             <ValidationMessage For="() => ComplaintGroup1.Photo" class="text-danger" />
                                         </div>
                                         <div class="form-group mt-5">
@@ -298,20 +298,22 @@
     string ImageUploadMessage = "";
     private async Task UploadImage(InputFileChangeEventArgs e)
     {
-        if (e.File.Name.ToLower().Contains(".png"))
+        if (e.File.Name.ToLower().EndsWith(".png")) // Check file extension
         {
             var format = "image/png";
             var resizeImage = await e.File.RequestImageFileAsync(format, 300, 300);
             var buffer = new byte[resizeImage.Size];
             await resizeImage.OpenReadStream().ReadAsync(buffer);
-            var imageData = $"data:{format}.base64,{Convert.ToBase64String(buffer)}";
+            var imageData = $"data:{format};base64,{Convert.ToBase64String(buffer)}"; // Corrected base64 format
             ImageUploadMessage = "";
             ComplaintGroup1.Photo = imageData;
-            imageData = "";
-            return;
+            StateHasChanged(); // Trigger re-render
         }
-        ImageUploadMessage = "PNG file needed.";
-        return;
+        else
+        {
+            ImageUploadMessage = "PNG file needed.";
+            StateHasChanged(); // Trigger re-render
+        }
     }
 
 
@@ -352,6 +354,7 @@
             Complaint.Name = ComplaintGroup1.Name;
             Complaint.CustomerTelephoneNumber = ComplaintGroup1.CustomerTelephoneNumber;
             Complaint.CustomerNumber = ComplaintGroup1.CustomerNumber;
+            Complaint.ComplaintType = ComplaintGroup1.ComplaintType;
             Complaint.FeedbackComments = ComplaintGroup1.FeedbackComments;
             Complaint.Photo = ComplaintGroup1.Photo;
             ShowLayer2();
@@ -369,6 +372,9 @@
             Complaint.TownId = ComplaintGroup2.TownId;
 
             await HandleSaveComplaintClickedEvent.InvokeAsync(Complaint);
+            ComplaintGroup1 = new();
+            ComplaintGroup2 = new();
+            Complaint = new();
         }
     }
 

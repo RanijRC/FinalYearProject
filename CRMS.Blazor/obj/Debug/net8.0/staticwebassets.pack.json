@@ -8805,6 +8805,10 @@
       "PackagePath": "staticwebassets\\images\\background\\bg.jpg"
     },
     {
+      "Id": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\wwwroot\\images\\profile\\logo-color.png",
+      "PackagePath": "staticwebassets\\images\\profile\\logo-color.png"
+    },
+    {
       "Id": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\wwwroot\\images\\profile\\profilepic.png",
       "PackagePath": "staticwebassets\\images\\profile\\profilepic.png"
     },

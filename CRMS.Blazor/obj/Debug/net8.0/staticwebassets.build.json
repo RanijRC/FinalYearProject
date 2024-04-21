@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KZirjN7NuBkgw4ca3sjJE8KmgPjuecLXj9vYUHxBrkc=",
+  "Hash": "Xe6l+xXN9qLyTRb09WvYLheD7bP9GcpBdYNf6llvIRA=",
   "Source": "CRMS.Blazor",
   "BasePath": "/",
   "Mode": "Root",
@@ -52075,6 +52075,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\background\\bg.jpg"
+    },
+    {
+      "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\wwwroot\\images\\profile\\logo-color.png",
+      "SourceId": "CRMS.Blazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/profile/logo-color.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\profile\\logo-color.png"
     },
     {
       "Identity": "D:\\School Files\\Year Files\\Year 3\\Semester 2\\Application Development\\repo\\CRMSFinalProject\\CRMS.Blazor\\wwwroot\\images\\profile\\profilepic.png",
